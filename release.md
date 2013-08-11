@@ -49,7 +49,7 @@ Mavenは基本的にWebDAVでのアクセスを行います。FTPやSSHを使用
 ### deployフェーズ
 
 deployフェーズは作成したパッケージをリモートのプライベートリポジトリに公開します。
-これはdefaultライフサイクルの最後のフェーズですので、compile, test, packageといったdefaulrライフサイクルに含まれるすべての他のフェーズが実行されてから実行されます。
+これはdefaultライフサイクルの最後のフェーズですので、compile, test, packageといったdefaultライフサイクルに含まれるすべての他のフェーズが実行されてから実行されます。
 
 ```sh
 $ mvn deploy
