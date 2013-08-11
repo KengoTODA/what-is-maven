@@ -42,6 +42,7 @@
 
 Mavenは基本的にWebDAVでのアクセスを行います。FTPやSSHを使用する場合は対応するプラグインの利用が必要です。
 
+
 ## リポジトリへの公開
 
 リポジトリにプロジェクトを公開する主な方法として、`deploy`ゴールと[maven-release-plugin](http://maven.apache.org/maven-release/maven-release-plugin/)の2つがあります。
@@ -65,3 +66,6 @@ releaseプラグインはプライベートリポジトリへの公開だけで�
 $ mvn release:prepare release:perform
 ```
 
+### 権限不足で公開に失敗したら
+
+リポジトリへの公開に権限が必要な場合、リポジトリの管理者に問い合せて権限を取得する必要があります。多くの場合は`~/.m2/settings.xml`を編集することになるでしょう。
