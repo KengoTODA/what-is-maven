@@ -45,7 +45,7 @@ Mavenは基本的にWebDAVでのアクセスを行います。FTPやSSHを使用
 
 ## リポジトリへの公開
 
-リポジトリにプロジェクトを公開する主な方法として、`deploy`ゴールと[maven-release-plugin](http://maven.apache.org/maven-release/maven-release-plugin/)の2つがあります。
+リポジトリにプロジェクトを公開する主な方法として、`deploy`フェーズと[maven-release-plugin](http://maven.apache.org/maven-release/maven-release-plugin/)の2つがあります。
 
 ### deployフェーズ
 
