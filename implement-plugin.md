@@ -6,9 +6,11 @@
 
 はじめに、pom.xmlに以下を明示しましょう。
 
-* `<packaging>`要素を`<project>`要素の直下に追加し、値を*maven-plugin*に設定
-* *maven-plugin-api*と*maven-plugin-annotations*に*provided* スコープで依存
-* `<artifactId>`要素を *(任意の名前)-maven-plugin* に設定（慣習でありで必須ではありません）
+* `<packaging>`要素を`<project>`要素の直下に追加し、値を *maven-plugin* に設定
+* *maven-plugin-api* と *maven-plugin-annotations* に *provided* スコープで依存
+* `<artifactId>`要素を *(任意の名前)-maven-plugin* に設定
+    * 慣習でありで必須ではありませんが、このように命名することでMavenプラグイン実行時に *-maven-plugin* を省略できます。
+    * 例えば jp.skypencilグループIDに属するsample-maven-pluginなら、`mvn jp.skypencil:sample`で実行できます。
 
 pom.xmlの概要は以下のようになります。
 
@@ -51,12 +53,6 @@ pom.xmlの概要は以下のようになります。
     <artifactId>maven-plugin-annotations</artifactId>
     <version>3.2</version>
     <scope>provided</scope>
-  </dependency>
-  <dependency>
-    <!-- optional dependency -->
-    <groupId>org.codehaus.plexus</groupId>
-    <artifactId>plexus-utils</artifactId>
-    <version>3.0.14</version>
   </dependency>
   <dependency>
     <groupId>junit</groupId>
