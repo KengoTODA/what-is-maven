@@ -10,7 +10,7 @@
   <groupId>jp.skypencil</groupId>
   <artifactId>sample-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <name>A simple Maven plugin to explain how to build.</name>
+  <name>A simple Maven plugin to explain how to build</name>
   <build>
     <plugins>
       <plugin>

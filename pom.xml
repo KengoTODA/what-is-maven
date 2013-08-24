@@ -8,6 +8,7 @@
   </parent>
   <groupId>jp.skypencil</groupId>
   <artifactId>what-is-maven</artifactId>
+  <name>A document to tell what is Maven and how to use Maven to Japanese developer</name>
   <version>1.0.0-SNAPSHOT</version>
   <url>https://github.com/eller86/what-is-maven</url>
   <description>Japanese document about Maven3</description>
@@ -37,6 +38,19 @@
     </license>
   </licenses>
   <modules>
+    <module>sample-maven-project</module>
     <module>sample-maven-plugin</module>
   </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <!--
+          oss-parent:7 がスレッドセーフでないバージョンを使用しているため、バージョンを上書き。
+          参考： https://github.com/sonatype/oss-parents/pull/2
+        -->
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>1.2</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>

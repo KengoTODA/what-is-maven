@@ -15,9 +15,10 @@
 
 ## サンプルプロジェクト
 
-1. [独自Mavenプラグインの実装](./sample-maven-plugin)
+1. [単純なMavenプロジェクト](./sample-maven-project)
+2. [独自Mavenプラグインの実装](./sample-maven-plugin)
 
 ## その他
 
 ライセンスならびに著作権については[はじめに](./preface.md)をご覧ください。
-英語の資料をお探しの方は、やや古い情報が混ざりますが[Sonatype社の資料](http://books.sonatype.com/mvnref-book/reference/)をお薦めします。
+英語の資料をお探しの方は、やや古い情報が混ざりますが[Sonatype社の資料](http://www.sonatype.com/resources/books)をお薦めします。
