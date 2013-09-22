@@ -9,7 +9,7 @@
 3. Maven応用
     1. [プロジェクトをリポジトリに公開する](./release.md)
     2. [Mavenプラグインを実装する](./implement-plugin.md)
-    3. [サブモジュールを理解する](./module.md)
+    3. [モジュールを理解する](./module.md)
 4. Mavenクックブック
 5. おわりに
 
