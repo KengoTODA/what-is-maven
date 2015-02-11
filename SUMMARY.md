@@ -1,8 +1,15 @@
 # 目次
 
 * [はじめに](preface.md)
-* [Maven入門](introduction.md)
+* [Maven入門](primer/README.md)
+    * [Mavenのインストール](primer/install.md)
+    * [Mavenの使い方](primer/abstract.md)
+    * [ビルド・ライフサイクル](primer/build-lifecycle.md)
+    * [pom.xml](primer/pom-xml.md)
+    * [Mavenリポジトリ](primer/maven-repository.md)
+    * [依存関係](primer/dependency.md)
+    * [Mavenプラグイン](primer/plugin.md)
+    * [フェーズ](primer/phase.md)
 * [プロジェクトをリポジトリに公開する](release.md)
 * [Mavenプラグインを実装する](implement-plugin.md)
 * [モジュールを理解する](module.md)
-
