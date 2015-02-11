@@ -1,4 +1,4 @@
-# プラグインを実装する
+# Mavenプラグインを実装する
 
 ここではMavenプラグインをMavenプロジェクトとして実装する方法を紹介します。
 
@@ -179,7 +179,7 @@ Mojoに記載したJavadocを元に、helpゴールを自動生成すること�
 ### マルチスレッド対応であることを明示する
 
 もし作成したプラグインがスレッドセーフである場合、つまり他のプラグインと同時実行しても問題ない場合はそれを明示することが望ましいと言えます。
-Maven3.1.0時点でのマルチスレッドサポートは限定的ですが、これが改善されたときのために用意しておきましょう。
+Maven3.2.5時点でのマルチスレッドサポートは限定的ですが、これが改善されたときのために用意しておきましょう。
 
 @MojoアノテーションのthreadSafeプロパティによってスレッドセーフか否かを表現できます。
 
@@ -194,29 +194,3 @@ Maven3.1.0時点でのマルチスレッドサポートは限定的ですが、�
 例えばレポートを生成するプラグインは、他のプラグインによってレポートの更新が行われないならば並列実行可能です。classファイルを生成したり変更したりするプラグインは同種のプラグインと同時実行するとclassファイルが壊れる可能性があるため、並列実行できません。
 
 * [Parallel builds in Maven 3](https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3)
-
-## プラグインを配布する
-
-プラグインは通常の成果物と同様、deployフェーズやmaven-release-pluginでリモートリポジトリにデプロイできます。
-ユーザに使ってもらうバージョンはsnapshotバージョンではなくreleaseバージョンにするよう心がけましょう。
-
-## 配布したプラグインを利用する
-
-pom.xmlに利用するプラグインを記載することで、Mavenが自動的にプラグインをダウンロードして利用するようになります。
-プラグインがプライベートリポジトリにある場合、`<pluginRepositories>`要素をpom.xmlの`<build>`直下に追加して利用するリポジトリを明示する必要があります。
-
-```xml
-<pluginRepositories>
-  <pluginRepository>
-    <id>private-repository</id>
-    <name>Private Repository</name>
-    <url>http://repository.skypencil.jp/</url>
-  </pluginRepository>
-</pluginRepositories>
-```
-
-## 参考になるプラグイン
-
-以下のプラグインは規模も大きくなく簡単に読むことができます。実装の際に参考にしてください。
-
-* [sample-maven-plugin](./sample-maven-plugin)
