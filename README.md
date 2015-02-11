@@ -1,17 +1,9 @@
 # What is Maven?
 
-これはMaven3.1.0に対応したMavenの入門ならびに応用を助ける日本語資料（開発中）です。
+これはMaven3.2に対応したMavenの入門ならびに応用を助ける日本語資料（開発中）です。
+[Gitbookにて電子書籍（PDF, ePub, mobi）を入手いただけます](http://kengotoda.gitbooks.io/what-is-maven/)。
 
-## 目次
-
-1. [はじめに](./preface.md)
-2. [Maven入門](./introduction.md)
-3. Maven応用
-    1. [プロジェクトをリポジトリに公開する](./release.md)
-    2. [Mavenプラグインを実装する](./implement-plugin.md)
-    3. [モジュールを理解する](./module.md)
-4. Mavenクックブック
-5. おわりに
+内容については、[目次](SUMMARY.md)をご確認ください。
 
 ## サンプルプロジェクト
 

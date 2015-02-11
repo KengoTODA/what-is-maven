@@ -19,7 +19,7 @@ Mavenは歴史が古いため、情報を公開しているサイトが多数存
 Maven2の情報が混ざっていたり最新のプラグイン事情を考慮していなかったりと情報の質にバラつきがあります。特にMavenそのものに
 詳しくない方には、見つかった情報が今でも有効なのか・利用して良いのかどうかを判別することは難しいと思われます。
 
-本資料は2013年夏時点での最新バージョン、`3.1.0`を前提として情報をまとめています。このため上記の問題を解決し、読者に新鮮な
+本資料は2015年2月時点での最新バージョン、`3.2.5`を前提として情報をまとめています。このため上記の問題を解決し、読者に新鮮な
 情報を提供することができると考えています。またCIやJavaEEや"JVM言語"など、近年Mavenと組み合わせることが増えてきた技術との
 連携方法についても紹介することで、より実用性の高い助力を目指そうとしています。
 
@@ -41,23 +41,21 @@ Mavenで管理されたプロジェクトにはじめて参加する開発者が
 
 ## 動作確認環境
 
-`OSX 10.8.4`にて`Oracle JDK 1.7.0_25`ならびに`Maven 3.1.0`を使用して動作確認を行っています。
-環境に強く依存するコードは含みませんので、JDK6が動く環境であればWindowsであれUNIXであれ問題なく動作すると思われます。
+`OSX 10.10.2`にて`Oracle JDK 1.8.0_20-b26`ならびに`Maven 3.2.5`を使用して動作確認を行っています。
+環境に強く依存するコードは含みませんので、JDK8が動く環境であればWindowsであれUNIXであれ問題なく動作すると思われます。
 
 ## サポート
 
-本資料ならびに本資料が参照するソースコードは[GitHubで入手できます](https://github.com/eller86/what-is-maven)。
+本資料ならびに本資料が参照するソースコードは[GitHubで入手できます](https://github.com/KengoTODA/what-is-maven)。
 資料の改善提案や修正依頼などはGitHubのissueあるいはpull requestを通じてご連絡願います。
-あるいは[著者のTwitterアカウント](https://twitter.com/eller86/)にご連絡いたただいても構いませんが、返答が遅れたり
-連絡を見逃したりする可能性がありますことをご承知おきください。
 
 ## ライセンス
 
-本資料の文章部分は<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>によってライセンスされています.
+本資料の文章部分は<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a>によってライセンスされています.
 またソースコードは<a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>によってライセンスされています。
 読者はライセンスに従い自由に本資料を複製・再配布することができます。
 
-文章ならびにソースコードの著作権は、特別の記載がない限りKengo TODA(@eller86)が有します。
+文章ならびにソースコードの著作権は、特別の記載がない限り[Kengo TODA](mailto:skypencil@gmail.com)が有します。
 ただし特別の記載がある場合、例えば寄稿いただいた文章や外部サイトからの引用についてはその限りではありません。
 
 ## 謝辞

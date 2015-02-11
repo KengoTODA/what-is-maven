@@ -10,19 +10,19 @@
   <artifactId>what-is-maven</artifactId>
   <name>A document to tell what is Maven and how to use Maven to Japanese developer</name>
   <version>1.0.0-SNAPSHOT</version>
-  <url>https://github.com/eller86/what-is-maven</url>
+  <url>https://github.com/KengoTODA/what-is-maven</url>
   <description>Japanese document about Maven3</description>
   <packaging>pom</packaging>
   <scm>
-    <connection>scm:git:git@github.com:eller86/what-is-maven.git</connection>
-    <developerConnection>scm:git:git@github.com:eller86/what-is-maven.git</developerConnection>
-    <url>git@github.com:eller86/what-is-maven.git</url>
+    <connection>scm:git:git@github.com:KengoTODA/what-is-maven.git</connection>
+    <developerConnection>scm:git:git@github.com:KengoTODA/what-is-maven.git</developerConnection>
+    <url>git@github.com:KengoTODA/what-is-maven.git</url>
   </scm>
   <developers>
     <developer>
-      <id>eller86</id>
+      <id>KengoTODA</id>
       <name>Kengo TODA</name>
-      <url>http://skypencil.jp/</url>
+      <url>http://kengotoda.github.io/</url>
     </developer>
   </developers>
   <licenses>
@@ -32,8 +32,8 @@
       <comments>すべてのソースコードのライセンス</comments>
     </license>
     <license>
-      <name>Creative Commons Attribution 3.0 Unported License</name>
-      <url>http://creativecommons.org/licenses/by/3.0/deed.en_US</url>
+      <name>Attribution-NonCommercial 4.0 International</name>
+      <url>https://creativecommons.org/licenses/by-nc/4.0/</url>
       <comments>すべてのドキュメント（.md）のライセンス</comments>
     </license>
   </licenses>
