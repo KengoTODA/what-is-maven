@@ -1,4 +1,4 @@
-# Summary
+# 目次
 
 * [はじめに](preface.md)
 * [Maven入門](introduction.md)
