@@ -42,6 +42,8 @@ compile, test, verify, installといったフェーズが含まれています�
 先ほどMavenがコンパイルや自動テストを実行したのは、packageフェーズを実行するために必要な
 validateからprepare-packageまでの16のフェーズすべてを実行したためです。
 こうしたフェーズの依存関係によって、Mavenユーザはやりたいことだけを伝えるだけで済むのです。
+「コンパイルしてからテストしたい！」という場合でも`mvn compile test`ではなく`mvn test`で充分だという
+ことに注意してください。
 
 さて、このdefaultライフサイクルにはcleanが見当たりません。cleanフェーズはcleanライフサイクルと呼ばれる他の
 ライフサイクルに属しています。このライフサイクルには3つのフェーズがあります。
@@ -52,7 +54,5 @@ validateからprepare-packageまでの16のフェーズすべてを実行した�
 
 例えば `mvn clean install` と実行すると、まずはcleanライフサイクルが実行され、その次にdefaultライフサイクルが
 実行されます。`mvn clean clean`ではcleanライフサイクルが2回実行されます。
-「コンパイルしてからテストしたい！」という場合でも`mvn compile test`ではなく`mvn test`で充分だという
-ことに注意してください。
 
 [1]: http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html "Introduction to the Build Lifecycle"
