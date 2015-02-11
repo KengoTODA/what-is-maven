@@ -1,4 +1,4 @@
-## 依存関係
+# 依存関係
 
 プロジェクトをビルドするときに、JDKだけでなくライブラリを必要とすることがあります。このことを「プロジェクトはライブラリに[依存している](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)」と表現します。
 Mavenではプロジェクトがライブラリに依存していることを以下のように明記できます。

@@ -1,4 +1,4 @@
-## Mavenのインストール
+# Mavenのインストール
 
 まず先に[JDKをインストール](http://www.oracle.com/technetwork/java/javase/downloads/)しておいてください。
 

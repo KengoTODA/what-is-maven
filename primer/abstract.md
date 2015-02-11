@@ -1,4 +1,4 @@
-## Mavenの使い方
+# Mavenの使い方
 
 基本的には`mvn package`のように行いたいことを引数に渡して実行するだけです。
 この「行いたいこと」をMavenではフェーズ（phase）と呼んでいます。主なphaseをいくつか紹介します。
@@ -51,7 +51,7 @@ targetディレクトリ以外の場所に作られることもありえます�
 
 [1]: http://stackoverflow.com/questions/2487485/what-is-maven-artifact "What is Maven artifact?"
 
-### Antに慣れている方のための補足
+## Antに慣れている方のための補足
 
 Antでは各targetの間に依存関係を明示することができました。例えば以下のXMLは、packageを実行する前に
 compileを実行しなければならないことを意味しています。
@@ -73,7 +73,7 @@ Mavenではこうしたtargetと依存関係、各targetで実行すべきtask�
 MavenではAntのtargetがフェーズ、Antのtaskがプラグインに相当します。各フェーズで実行されるプラグインは
 デフォルトで割り当てられたものに加え、好みのものを追加することも可能です。
 
-### makeやnpmに慣れている方のための補足
+## makeやnpmに慣れている方のための補足
 
 Mavenのインストールは`make install`や`npm install -g`とは違い、プロジェクトから実行可能ファイルを作って
 PATHに追加することを意味しません。アーティファクトを作ってプライベートリポジトリに配置することです。
