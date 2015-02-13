@@ -21,4 +21,6 @@
     * [モジュールでプロジェクトに構造を持ち込む](module/construct.md)
     * [マルチモジュール構成プロジェクト用実行時オプション](module/option.md)
 * [困ったときの逆引き](troubleshoot.md)
-* [サンプルプロジェクト](sample-project.md)
+* 付録
+    * [用語集](GLOSSARY.md)
+    * [サンプルプロジェクト](sample-project.md)
