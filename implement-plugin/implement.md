@@ -1,6 +1,6 @@
 # Mojoを作成する
 
-Mavenプラグインの実体は、Mojoと呼ばれるクラスです。Mavenプラグインは含まれるゴールの数だけMojoを保有します。
+Mavenプラグインの実体は、Mojo（Maven plain Old Java Object）と呼ばれるクラスです。Mavenプラグインは含まれるゴールの数だけMojoを保有します。
 このクラスに必要なメソッドとMojoアノテーションを追加することでプラグインの実装を行います。
 
 Mojoは`AbstractMojo`を継承し、`@Mojo`アノテーションで修飾される必要があります。

@@ -57,20 +57,27 @@ public class SampleMojoTest {
 `MojoRule`はMojoインスタンスを生成するためのJUnit Ruleです。
 
 `TestResources`は各テストメソッドで固有のリソースを使うためのJUnit Ruleです。
-`src/test/projects`以下にダミー用のMavenプロジェクトを配置
+`src/test/projects`以下にダミーのMavenプロジェクトが入ったディレクトリを配置しておき、
+そのディレクトリ名を`getBasedir()`メソッドに渡すことで、ダミープロジェクトの設定を元に
+Mojoインスタンスを作成することができます。
+
+つまりこのテストは、ダミープロジェクトの設定を元に作成したMojoインスタンスのメソッドを呼ぶことで
+プラグインが正常に動作することを確認するためのものです。
 
 
 ## 期待通りに正常終了することをテストする
 
-`MojoRule`のインスタンスメソッドを通じて取得した`Mojo`インスタンスの`execute()`メソッドを呼ぶことで、
+前述のとおり、`MojoRule`のインスタンスメソッドを通じて取得した`Mojo`インスタンスの`execute()`メソッドを呼ぶことで、
 実際にMavenプラグインを実行できます。`execute()`メソッドが例外を投げずに終了した場合、Mavenプラグインが
 正常終了したとみなせます。
 
 ```java
   @Test
   public void testGoalSucceeds() {
-    // TODO how to use lookupMojo?
-    Mojo samplePlugin = mojo.lookupMojo("help", "pom.xml");
+    File baseDir = resources.getBasedir("project");
+    File pom = new File(baseDir, "pom.xml");
+
+    Mojo samplePlugin = mojo.lookupMojo("help", pom);
     assertNotNull(samplePlugin);
     samplePlugin.execute();
   }
@@ -82,30 +89,49 @@ public class SampleMojoTest {
 
 設定が異常なときや必要なファイルがないときは、Mavenプラグインが異常終了する必要があります。
 
-JUnitのテストとしては、`execute()`メソッドが`MojoFailureException`を投げることを確認するコードを書きます。
+JUnitのテストとしては、`execute()`メソッドが`MojoFailureException`あるいは`MojoExecutionException`を投げることを確認するコードを書きます。
 次のように`@Test`アノテーションに期待される例外を指定してください。
 
 ```java
   @Test(expected = MojoFailureException.class)
   public void testGoalFailsAsExpected() {
-    // TODO how to use lookupMojo?
-    Mojo samplePlugin = mojo.lookupMojo("help", "pom.xml");
+    File baseDir = resources.getBasedir("project");
+    File pom = new File(baseDir, "pom.xml");
+
+    Mojo samplePlugin = mojo.lookupMojo("help", pom);
     assertNotNull(samplePlugin);
     samplePlugin.execute();
   }
 ```
 
-// TODO MojoExecutionException との違いは？
+Wikiによると`MojoExecutionException`は[設定に問題がありMojoの実行ができなかったとき](https://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException)に、`MojoFailureException`は[依存関係やプロジェクトが持つソースコードに問題がありMojoの実行が失敗したとき](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException)に投げる必要があります。
+
+[Javadocに記載されている表現](http://maven.apache.org/ref/3.2.5/maven-plugin-api/apidocs/org/apache/maven/plugin/Mojo.html#execute%28%29)で言い換えると、`MojoExecutionException`はプラグイン提供者が発生を期待しない問題が生じたときにビルドをエラー終了させるために、`MojoFailureException`はプラグイン提供者が期待する問題が生じたときにビルドを失敗させるために使います。
+適宜使い分けてください。
+
 
 ## ログが正しく呼ばれていることを確認する
 
 Mavenプラグインを使用するユーザは、ログを通じてプラグインからの結果報告や異常通知などを受けます。
-このためログが特定の条件下で期待通りに出ること、
+このためログが特定の条件下で期待通りに出ることは、ぜひテストで確認・保証しておきたいポイントです。
 
+`Mojo`インタフェースはロガーをセットするメソッドを提供していますので、モックオブジェクトを利用することができます。
+以下のコードは[Mockito](https://github.com/mockito/mockito)を利用してデバッグログの出力内容を確認するものです。
 
 ```java
+  @Test
+  public void testSampleGoalPrintsOutputDirectory() throws Exception {
+    File baseDir = resources.getBasedir("simple");
+    File pom = new File(baseDir, "pom.xml");
+    Log log = Mockito.mock(Log.class);
+
+    Mojo samplePlugin = mojo.lookupMojo("sample", pom);
+    samplePlugin.setLog(log);
+    samplePlugin.execute();
+    Mockito.verify(log).debug("outputDirectory is /tmp/target");
+  }
 ```
 
-
-
-* http://maven.apache.org/plugin-testing/maven-plugin-testing-harness/getting-started/index.html
+以上で紹介したように、Mavenプラグインは簡単に単体テストによってテストできます。
+複数の動作環境で動作することを保証する意味でも、ソースコードの変更によるバグ混入を未然に防ぐ意味でも、自動テストはプラグイン開発に有用です。
+[Jenkinsのマルチ構成プロジェクト](https://wiki.jenkins-ci.org/display/JA/Building+a+matrix+project)や[JUnitのTheory](https://github.com/junit-team/junit/wiki/Theories)と組み合わせるなどして、機能の安定提供に役立ててください。
