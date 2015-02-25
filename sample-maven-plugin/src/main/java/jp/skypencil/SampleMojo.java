@@ -4,24 +4,17 @@ import java.io.File;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
-import org.apache.maven.plugins.annotations.Execute;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
 /**
- * <p>Execute `mvn jp.skypencil:sample-maven-plugin:sample` to call this mojo.
- *
- * @author eller86
- * @version 0.0.1
+ * Execute `mvn jp.skypencil:sample-maven-plugin:sample` to call this mojo.
  */
 @Mojo(
         name = "sample",
-        threadSafe = true
-)
-@Execute(
-        goal = "sample",
-        phase = LifecyclePhase.COMPILE
+        threadSafe = true,
+        defaultPhase = LifecyclePhase.COMPILE
 )
 public class SampleMojo extends AbstractMojo {
     @Parameter(
@@ -32,7 +25,11 @@ public class SampleMojo extends AbstractMojo {
 
     @Override
     public void execute() throws MojoExecutionException {
+        if (outputDirectory == null) {
+            throw new MojoExecutionException("outputDirectory is required");
+        }
+
         getLog().info("sample plugin start!");
-        getLog().debug("project.build.directory is " + outputDirectory.getAbsolutePath());
+        getLog().debug("outputDirectory is " + outputDirectory.getAbsolutePath());
     }
 }
