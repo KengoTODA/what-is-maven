@@ -38,8 +38,6 @@ public class SampleMojo extends AbstractMojo {
 }
 ```
 
-TODO outputDirectoryはStringじゃなくて大丈夫？
-
 順を追って見ていきましょう。
 
 ## 呼び出されるメソッドを実装する
