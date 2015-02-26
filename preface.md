@@ -55,6 +55,8 @@ Mavenで管理されたプロジェクトにはじめて参加する開発者が
 またソースコードは<a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>によってライセンスされています。
 読者はライセンスに従い自由に本資料を複製・再配布することができます。
 
+## 著作権
+
 文章ならびにソースコードの著作権は、特別の記載がない限り[Kengo TODA](mailto:skypencil@gmail.com)が有します。
 ただし特別の記載がある場合、例えば寄稿いただいた文章や外部サイトからの引用についてはその限りではありません。
 
