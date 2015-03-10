@@ -4,10 +4,10 @@
 Mavenではプロジェクトがライブラリに依存していることを以下のように明記できます。
 
 ```xml
-<dependency><!-- このプロジェクトはJUnit バージョン4.11に依存している -->
+<dependency><!-- このプロジェクトはJUnit バージョン{{book.version.junit}}に依存している -->
   <groupId>junit</groupId>
   <artifactId>junit</artifactId>
-  <version>4.11</version>
+  <version>{{book.version.junit}}</version>
   <scope>test</scope>
 </dependency>
 ```

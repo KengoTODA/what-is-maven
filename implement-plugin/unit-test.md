@@ -15,7 +15,7 @@ Mavenプラグインの単体テストを作成するために、`maven-plugin-t
   <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
-    <version>4.12</version>
+    <version>{{book.version.junit}}</version>
     <scope>test</scope>
   </dependency>
   <dependency>
@@ -106,7 +106,7 @@ JUnitのテストとしては、`execute()`メソッドが`MojoFailureException`
 
 Wikiによると`MojoExecutionException`は[設定に問題がありMojoの実行ができなかったとき](https://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException)に、`MojoFailureException`は[依存関係やプロジェクトが持つソースコードに問題がありMojoの実行が失敗したとき](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException)に投げる必要があります。
 
-[Javadocに記載されている表現](http://maven.apache.org/ref/3.2.5/maven-plugin-api/apidocs/org/apache/maven/plugin/Mojo.html#execute%28%29)で言い換えると、`MojoExecutionException`はプラグイン提供者が発生を期待しない問題が生じたときにビルドをエラー終了させるために、`MojoFailureException`はプラグイン提供者が期待する問題が生じたときにビルドを失敗させるために使います。
+[Javadocに記載されている表現](http://maven.apache.org/ref/{{book.version.maven}}/maven-plugin-api/apidocs/org/apache/maven/plugin/Mojo.html#execute%28%29)で言い換えると、`MojoExecutionException`はプラグイン提供者が発生を期待しない問題が生じたときにビルドをエラー終了させるために、`MojoFailureException`はプラグイン提供者が期待する問題が生じたときにビルドを失敗させるために使います。
 適宜使い分けてください。
 
 
