@@ -2,7 +2,8 @@
   "variables": {
     "version": {
       "maven": "3.2.5",
-      "junit": "4.12
+      "junit": "4.12",
+      "jdk": "8"
     }
   }
 }

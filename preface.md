@@ -41,8 +41,8 @@ Mavenで管理されたプロジェクトにはじめて参加する開発者が
 
 ## 動作確認環境
 
-`OSX 10.10.2`にて`Oracle JDK 1.8.0_20-b26`ならびに`Maven {{book.version.maven}}`を使用して動作確認を行っています。
-環境に強く依存するコードは含みませんので、JDK8が動く環境であればWindowsであれUNIXであれ問題なく動作すると思われます。
+`OSX 10.10.2`にて`Oracle JDK{{book.version.jdk}}`ならびに`Maven {{book.version.maven}}`を使用して動作確認を行っています。
+環境に強く依存するコードは含みませんので、JDK{{book.version.jdk}}が動く環境であればWindowsであれUNIXであれ問題なく動作すると思われます。
 
 ## サポート
 
