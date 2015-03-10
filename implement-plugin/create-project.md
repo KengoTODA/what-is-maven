@@ -26,7 +26,7 @@
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
-      <version>3.2.5</version><!-- version of Maven -->
+      <version>{{book.version.maven}}</version><!-- version of Maven -->
       <scope>provided</scope>
     </dependency>
     <dependency>

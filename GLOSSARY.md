@@ -21,7 +21,7 @@
 
 # バージョン
 
-* http://maven.apache.org/ref/3.2.5/maven-artifact/apidocs/org/apache/maven/artifact/versioning/ComparableVersion.html
+* http://maven.apache.org/ref/{{book.version.maven}}/maven-artifact/apidocs/org/apache/maven/artifact/versioning/ComparableVersion.html
 
 # classifier
 

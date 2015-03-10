@@ -87,7 +87,7 @@ if (getLog().isDebugEnabled()) {
 ## マルチスレッド対応の明示
 
 もし作成したプラグインがスレッドセーフである場合は、それを明示することが望ましいと言えます。
-Maven3.2.5時点でのマルチスレッドサポートは限定的ですが、これが改善されたときのために用意しておきましょう。
+Maven{{book.version.maven}}時点でのマルチスレッドサポートは限定的ですが、これが改善されたときのために用意しておきましょう。
 
 `@Mojo`アノテーションの`threadSafe`プロパティによってスレッドセーフか否かを表現できます。
 [公式のチェックリスト](https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3#ParallelbuildsinMaven3-Mojothreadsafetyassertionchecklist)を確認し、スレッドセーフであると言える場合は、`true`を指定しましょう。

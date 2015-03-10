@@ -10,8 +10,8 @@ binディレクトリに実行可能ファイルが含まれていますので�
 
 ```zsh
 $ mvn --version
-Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-15T01:29:23+08:00)
-Maven home: /usr/local/Cellar/maven/3.2.5/libexec
+Apache Maven {{book.version.maven}} (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-15T01:29:23+08:00)
+Maven home: /usr/local/Cellar/maven/{{book.version.maven}}/libexec
 Java version: 1.8.0_20, vendor: Oracle Corporation
 Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre
 Default locale: en_US, platform encoding: UTF-8
