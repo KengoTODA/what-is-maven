@@ -15,7 +15,7 @@ Mavenプラグインの単体テストを作成するために、`maven-plugin-t
   <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
-    <version>4.12</version>
+    <version>{{book.version.junit}}</version>
     <scope>test</scope>
   </dependency>
   <dependency>

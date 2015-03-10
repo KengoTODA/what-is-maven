@@ -20,6 +20,7 @@
   </scm>
   <properties>
     <version.maven>3.2.5</version.maven>
+    <version.junit>4.12</version.junit>
   </properties>
   <developers>
     <developer>
