@@ -1,6 +1,6 @@
 # 概要
 
-「Maven3のはじめかた」はMaven3.2に対応したMavenの入門ならびに応用を助ける日本語資料（開発中）です。
+「Maven3のはじめかた」はMaven{{book.version.maven}}に対応したMavenの入門ならびに応用を助ける日本語資料（開発中）です。
 Gitbookにて[電子書籍（PDF, ePUB, MOBI）を無償配布しています](http://kengotoda.gitbooks.io/what-is-maven/)。
 こちらのQRコードからも無償配布ページに行けます。
 

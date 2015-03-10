@@ -1,0 +1,7 @@
+{
+  "variables": {
+    "version": {
+      "maven": "3.2.5"
+    }
+  }
+}
