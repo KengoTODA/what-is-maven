@@ -12,7 +12,7 @@
     * [Mavenプラグイン](primer/plugin.md)
     * [フェーズ](primer/phase.md)
 * [プロジェクトをリポジトリに公開する](deploy/README.md)
-    * [SNAPSHOTバージョン](deploy/snapshot-and-stable.md)
+    * [バージョンの種類と使い分け](deploy/snapshot-and-stable.md)
     * [公開先のリポジトリを指定する](deploy/specify-repository.md)
     * [リポジトリへの公開](deploy/deploy.md)
 * [Mavenプラグインを実装する](implement-plugin/README.md)
