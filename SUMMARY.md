@@ -10,7 +10,6 @@
     * [Mavenリポジトリ](primer/maven-repository.md)
     * [依存関係](primer/dependency.md)
     * [Mavenプラグイン](primer/plugin.md)
-    * [フェーズ](primer/phase.md)
 * [プロジェクトをリポジトリに公開する](deploy/README.md)
     * [バージョンの種類と使い分け](deploy/snapshot-and-stable.md)
     * [公開先のリポジトリを指定する](deploy/specify-repository.md)
