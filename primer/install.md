@@ -8,15 +8,14 @@ binディレクトリに実行可能ファイルが含まれていますので�
 最後に`mvn --version`を実行して、Mavenが正しく実行されること・意図通りのJDKが認識されていることを確認してください。
 参考までに、執筆している環境では以下のような出力が得られました。
 
-```zsh
-$ mvn --version
+<pre><code class="lang-zsh">$ mvn --version
 Apache Maven {{book.version.maven}} (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-15T01:29:23+08:00)
 Maven home: /usr/local/Cellar/maven/{{book.version.maven}}/libexec
 Java version: 1.8.0_20, vendor: Oracle Corporation
 Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.10.2", arch: "x86_64", family: "mac"
-```
+</core></pre>
 
 このように、Mavenは`mvn`コマンドによって呼び出します。`--version`はMavenやJDKのバージョンを出力するための
 オプションです。オプションについては適宜解説していきます。
