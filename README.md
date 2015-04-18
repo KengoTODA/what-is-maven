@@ -1,5 +1,7 @@
 # 概要
 
+[![Build Status](https://travis-ci.org/KengoTODA/what-is-maven.svg)](https://travis-ci.org/KengoTODA/what-is-maven)
+
 「Maven3のはじめかた」はMaven{{book.version.maven}}に対応したMavenの入門ならびに応用を助ける日本語資料（開発中）です。
 Gitbookにて[電子書籍（PDF, ePUB, MOBI）を無償配布しています](http://kengotoda.gitbooks.io/what-is-maven/)。
 こちらのQRコードからも無償配布ページに行けます。
