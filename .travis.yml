@@ -1,0 +1,10 @@
+language: java
+jdk:
+  - oraclejdk8
+before_script:
+  - npm install
+  - npm test
+sudo: false
+cache:
+  directories:
+    - node_modules

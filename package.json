@@ -1,0 +1,12 @@
+{
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:KengoTODA/what-is-maven.git"
+  },
+  "scripts": {
+    "test": "node node_modules/gitbook-cli/bin/gitbook.js build"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^0.3.3"
+  }
+}
