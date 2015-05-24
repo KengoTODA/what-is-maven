@@ -92,14 +92,22 @@ Maven{{book.version.maven}}時点でのマルチスレッドサポートは限�
 `@Mojo`アノテーションの`threadSafe`プロパティによってスレッドセーフか否かを表現できます。
 [公式のチェックリスト](https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3#ParallelbuildsinMaven3-Mojothreadsafetyassertionchecklist)を確認し、スレッドセーフであると言える場合は、`true`を指定しましょう。
 
-TODO チェックリストの翻訳
-
 ```java
 @Mojo(
         name = "sample",
         threadSafe = true
 )
 ```
+
+2015年4月時点での公式チェックリストの訳を以下に記載します。
+
+* staticなフィールドや変数を使っている場合、その値がスレッドセーフであることを確認すること。
+    * 特に "java.text.Format" のサブクラス (NumeberFormat, DateFormat など) はスレッドセーフでないので、staticなフィールドを介して複数のスレッドから利用されるようなことがないように注意する。
+* `components.xml`にシングルトンとして定義されているPlexusコンポーネントを使っている場合、そのコンポーネントはスレッドセーフでなければならない。
+* 依存ライブラリに既知の問題が存在しないか確認すること。
+* サードパーティ製ライブラリがスレッドセーフであることを確認すること。
+
+つまり、単一JVM内で複数のMojoインスタンスが並列に作成・実行される可能性があるので、それに備える必要があるということです。
 
 
 ## 動作確認
