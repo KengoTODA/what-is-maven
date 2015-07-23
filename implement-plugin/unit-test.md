@@ -34,7 +34,7 @@ Mavenプラグインの単体テストを作成するために、`maven-plugin-t
 ```java
 public class SampleMojoTest {
   @Rule
-  public MojoRule mojo = new MojoRule();
+  public MojoRule mojoRule = new MojoRule();
 
   @Rule
   public TestResources resources = new TestResources();
@@ -46,7 +46,7 @@ public class SampleMojoTest {
     File pom = new File(baseDir, "pom.xml");
 
     // 'help' ゴールを実行
-    Mojo mojo = mojo.lookupMojo("help", pom);
+    Mojo mojo = mojoRule.lookupMojo("help", pom);
     mojo.execute();
   }
 }
@@ -75,7 +75,7 @@ Mojoインスタンスを作成することができます。
     File baseDir = resources.getBasedir("project");
     File pom = new File(baseDir, "pom.xml");
 
-    Mojo samplePlugin = mojo.lookupMojo("help", pom);
+    Mojo samplePlugin = mojoRule.lookupMojo("help", pom);
     assertNotNull(samplePlugin);
     samplePlugin.execute();
   }
@@ -96,7 +96,7 @@ JUnitのテストとしては、`execute()`メソッドが`MojoFailureException`
     File baseDir = resources.getBasedir("project");
     File pom = new File(baseDir, "pom.xml");
 
-    Mojo samplePlugin = mojo.lookupMojo("help", pom);
+    Mojo samplePlugin = mojoRule.lookupMojo("help", pom);
     assertNotNull(samplePlugin);
     samplePlugin.execute();
   }
@@ -123,7 +123,7 @@ Mavenプラグインを使用するユーザは、ログを通じてプラグイ
     File pom = new File(baseDir, "pom.xml");
     Log log = Mockito.mock(Log.class);
 
-    Mojo samplePlugin = mojo.lookupMojo("sample", pom);
+    Mojo samplePlugin = mojoRule.lookupMojo("sample", pom);
     samplePlugin.setLog(log);
     samplePlugin.execute();
     Mockito.verify(log).debug("outputDirectory is /tmp/target");
