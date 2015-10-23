@@ -1,12 +1,17 @@
 {
   "repository": {
-    "type" : "git",
-    "url" : "git@github.com:KengoTODA/what-is-maven.git"
+    "type": "git",
+    "url": "git@github.com:KengoTODA/what-is-maven.git"
   },
   "scripts": {
-    "test": "node node_modules/gitbook-cli/bin/gitbook.js build"
+    "test": "node node_modules/gitbook-cli/bin/gitbook.js build && textlint **/*.md"
   },
   "devDependencies": {
-    "gitbook-cli": "^0.3.3"
+    "gitbook-cli": "^0.3.3",
+    "textlint": "^4.1.2",
+    "textlint-rule-max-ten": "^1.2.2",
+    "textlint-rule-no-mix-dearu-desumasu": "^1.3.0",
+    "textlint-rule-no-start-duplicated-conjunction": "^1.0.6",
+    "textlint-rule-spellcheck-tech-word": "^4.1.0"
   }
 }
