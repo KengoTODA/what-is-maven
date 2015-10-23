@@ -5,8 +5,7 @@
 ## deployフェーズ
 
 deployフェーズは作成したパッケージをリモートのプライベートリポジトリに公開します。
-これはdefaultライフサイクルの最後のフェーズですので、compile, test, packageといった
-defaultライフサイクルに含まれるすべての他のフェーズが実行されてから実行されます。
+これはdefaultライフサイクルの最後のフェーズですので、compile, test, packageといったdefaultライフサイクルに含まれるすべての他のフェーズが実行されてから実行されます。
 
 ```sh
 $ mvn deploy
@@ -16,7 +15,7 @@ $ mvn deploy
 安定バージョンを公開するときは、次に説明する`maven-release-plugin`を利用してください。
 
 
-## maven-relase-plugin
+## `maven-relase-plugin`
 
 `maven-release-plugin`はプライベートリポジトリへの公開だけでなく、バージョン番号をインクリメントする・
 VCSのタグやブランチを編集する・依存するライブラリにSNAPSHOTバージョンが含まれていたらリリースを

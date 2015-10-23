@@ -29,7 +29,7 @@ defaultライフサイクルには以下のように並んだフェーズが含�
 12. process-test-resources （テスト用リソースの自動処理）
 13. test-compile （テストコードのコンパイル）
 14. process-test-classes （テスト用classファイルの自動処理）
-15. test （単体テストの実行）
+15. test （ユニットテストの実行）
 16. prepare-package （アーティファクト作成の準備）
 17. package （アーティファクトの作成）
 18. pre-integration-test （インテグレーションテストの前処理）
