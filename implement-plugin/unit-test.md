@@ -1,7 +1,7 @@
-# 単体テストを作成する
+# ユニットテストを作成する
 
-Mavenプラグインの単体テストを作成するために、`maven-plugin-testing-harness`というライブラリが
-提供されています。ここではこのライブラリをJUnitと組み合わせて、単体テストを作成する方法を紹介します。
+Mavenプラグインのユニットテストを作成するために、`maven-plugin-testing-harness`というライブラリが
+提供されています。ここではこのライブラリをJUnitと組み合わせて、ユニットテストを作成する方法を紹介します。
 
 
 ## pom.xmlに依存ライブラリを追記する
@@ -25,9 +25,9 @@ Mavenプラグインの単体テストを作成するために、`maven-plugin-t
   &lt;/dependency&gt;
 &lt;/dependencies&gt;</code></pre>
 
-## 単体テストを作成する
+## ユニットテストを作成する
 
-追加したら単体テストの作成を開始できます。
+追加したらユニットテストの作成を開始できます。
 `maven-plugin-testing-harness`ではJUnit4の`@Rule`アノテーションを利用しての開発が可能です。
 最も単純なテストは以下のようになります。
 
@@ -130,6 +130,6 @@ Mavenプラグインを使用するユーザは、ログを通じてプラグイ
   }
 ```
 
-以上で紹介したように、Mavenプラグインは簡単に単体テストによってテストできます。
+以上で紹介したように、Mavenプラグインは簡単にユニットテストによってテストできます。
 複数の動作環境で動作することを保証する意味でも、ソースコードの変更によるバグ混入を未然に防ぐ意味でも、自動テストはプラグイン開発に有用です。
 [Jenkinsのマルチ構成プロジェクト](https://wiki.jenkins-ci.org/display/JA/Building+a+matrix+project)や[JUnitのTheory](https://github.com/junit-team/junit/wiki/Theories)と組み合わせるなどして、機能の安定提供に役立ててください。
