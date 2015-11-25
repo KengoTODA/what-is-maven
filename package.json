@@ -4,7 +4,7 @@
     "url": "git@github.com:KengoTODA/what-is-maven.git"
   },
   "scripts": {
-    "test": "node node_modules/gitbook-cli/bin/gitbook.js build",
+    "test": "gitbook build",
     "lint": "textlint **/*.md"
   },
   "devDependencies": {
