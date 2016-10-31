@@ -1,5 +1,5 @@
 {
-  "gitbook": "3.1.x",
+  "gitbook": "3.2.x",
   "variables": {
     "version": {
       "maven": "3.3.9",
