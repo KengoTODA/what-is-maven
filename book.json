@@ -1,5 +1,8 @@
 {
   "gitbook": "3.2.x",
+  "title": "Maven3のはじめかた",
+  "author": "Kengo TODA",
+  "language": "ja",
   "variables": {
     "version": {
       "maven": "3.3.9",
