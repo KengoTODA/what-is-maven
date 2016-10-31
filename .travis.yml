@@ -1,6 +1,4 @@
 language: java
-node_js:
-  - 6
 jdk:
   - oraclejdk8
 install:
