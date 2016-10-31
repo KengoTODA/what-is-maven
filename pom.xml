@@ -19,7 +19,7 @@
     <url>git@github.com:KengoTODA/what-is-maven.git</url>
   </scm>
   <properties>
-    <version.maven>3.2.5</version.maven>
+    <version.maven>3.3.9</version.maven>
     <version.junit>4.12</version.junit>
   </properties>
   <developers>
