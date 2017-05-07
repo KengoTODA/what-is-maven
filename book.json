@@ -5,7 +5,7 @@
   "language": "ja",
   "variables": {
     "version": {
-      "maven": "3.3.9",
+      "maven": "3.5.0",
       "junit": "4.12",
       "jdk": "8"
     }
