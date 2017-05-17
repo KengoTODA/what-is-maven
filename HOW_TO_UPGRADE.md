@@ -2,6 +2,7 @@
 
 * Update `version.maven` in `book.json`
 * Update `version.maven` in `pom.xml`
+* Update distribution URL in `.mvn/wrapper/maven-wrapper.properties`
 
 # Upgrade JUnit
 
