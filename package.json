@@ -5,7 +5,7 @@
   },
   "scripts": {
     "test": "gitbook build",
-    "lint": "textlint **/*.md"
+    "lint": "textlint '!(node_modules)/*.md'"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
