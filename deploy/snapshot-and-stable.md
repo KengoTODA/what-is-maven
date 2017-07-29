@@ -66,4 +66,4 @@ RCはリリース候補（Release Candidate）、SPはサービスパック（Se
 興味のある方は[公式ドキュメント](https://cwiki.apache.org/confluence/display/MAVENOLD/Versioning)をご覧ください。
 
 
-[^1]: [Wikiにはproposalとして書いてある](https://cwiki.apache.org/confluence/display/MAVENOLD/Versioning)が、Maven3では[]実装済み機能として利用できる](https://github.com/apache/maven/blob/master/maven-artifact/src/main/java/org/apache/maven/artifact/versioning/ComparableVersion.java)
+[^1]: [Wikiにはproposalとして書いてある](https://cwiki.apache.org/confluence/display/MAVENOLD/Versioning)が、Maven3では[実装済み機能として利用できる](https://github.com/apache/maven/blob/master/maven-artifact/src/main/java/org/apache/maven/artifact/versioning/ComparableVersion.java)
