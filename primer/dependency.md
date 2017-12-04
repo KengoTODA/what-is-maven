@@ -1,7 +1,7 @@
 # 依存関係
 
 プロジェクトをビルドするときに、JDKだけでなくライブラリを必要とすることがあります。このことを「プロジェクトはライブラリに[依存している](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)」と表現します。
-Mavenではプロジェクトがライブラリに依存していることを以下のように明記できます。
+Mavenではプロジェクトがライブラリに依存していることを次のように明記できます。
 
 <pre><code class="lang-xml">&lt;dependency&gt;&lt;!-- このプロジェクトはJUnit バージョン{{book.version.junit}}に依存している --&gt;
   &lt;groupId&gt;junit&lt;/groupId&gt;
