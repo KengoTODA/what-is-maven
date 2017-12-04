@@ -1,5 +1,8 @@
 {
   "rules": {
+    "prh": {
+      "rulePaths" :["./prh-rules/media/techbooster.yml"]
+    },
     "max-ten": {
       "max": 3
     },
