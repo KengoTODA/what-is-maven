@@ -13,7 +13,7 @@ mvn install
 ## 特定のモジュールだけをビルドする
 
 `--projects`オプションを使うことで、特定のモジュールだけをビルドすることができます。
-例えば次のコマンドはcoreモジュールだけをinstallします。
+たとえば次のコマンドはcoreモジュールだけをinstallします。
 
 ```sh
 mvn install --projects core
@@ -27,7 +27,7 @@ mvn install --projects core
 ビルドにはなりません。依存モジュールのビルドも必要な場合には、`--also-make`オプションを利用しましょう。
 Mavenはモジュール間の依存関係を自動的に計算して、依存モジュールをどの順にビルドするべきかも判断してくれます。
 
-例えばcoreモジュールとそれが依存するモジュールだけinstallしたい場合は、以下のようにコマンドを実行します。
+たとえばcoreモジュールとそれが依存するモジュールだけinstallしたい場合は、次のようにコマンドを実行します。
 
 ```sh
 mvn install --also-make --projects core

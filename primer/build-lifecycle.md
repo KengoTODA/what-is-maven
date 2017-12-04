@@ -13,7 +13,7 @@
 
 ## defaultライフサイクル
 
-defaultライフサイクルには以下のように並んだフェーズが含まれています。
+defaultライフサイクルには次のように並んだフェーズが含まれています。
 
 1. validate （プロジェクトの状態確認）
 2. initialize （ビルドの初期化処理）
@@ -52,7 +52,7 @@ cleanフェーズはcleanライフサイクルと呼ばれる他のライフサ�
 2. clean （一時ファイルの削除）
 3. post-clean （一時ファイル削除の後処理）
 
-例えば `mvn clean install` と実行すると、まずはcleanライフサイクルが実行され、その次にdefaultライフサイクルが実行されます。
+たとえば `mvn clean install` と実行すると、まずはcleanライフサイクルが実行され、その次にdefaultライフサイクルが実行されます。
 `mvn clean clean`ではcleanライフサイクルが2回実行されます。
 
 [1]: http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html "Introduction to the Build Lifecycle"

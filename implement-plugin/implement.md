@@ -6,7 +6,7 @@ Mavenプラグインの実体は、Mojo（Maven plain Old Java Object）と呼�
 Mojoは`AbstractMojo`を継承し、`@Mojo`アノテーションで修飾される必要があります。
 また`@Execute`アノテーションや`@Parameter`アノテーション、`@Component`アノテーションなど[org.apache.maven.plugins.annotationsパッケージ](http://maven.apache.org/plugin-tools/apidocs/org/apache/maven/plugins/annotations/package-summary.html)に用意されたアノテーションを使用することもできます。
 
-以下にシンプルなMojoの実装を記載します。
+次にシンプルなMojoの実装を記載します。
 
 ```java
 import java.io.File;
@@ -52,7 +52,7 @@ Mavenプラグインが実行されると、Mojoの`execute`メソッドが実�
 
 ## 設定を作成する
 
-プラグインは様々なプロジェクトに対応するため、しばしば設定を提供します。
+プラグインはさまざまなプロジェクトに対応するため、しばしば設定を提供します。
 設定は`pom.xml`に記載することができるため、同じ設定を複数の環境で容易に共有することができます。
 一般的な設定としては以下があります。`
 
@@ -79,18 +79,18 @@ if (getLog().isDebugEnabled()) {
 }
 ```
 
-なお引数に渡す文字列には、改行コードを含めないことをおすすめします。接頭辞がつかない行ができてしまい、
+なお引数に渡す文字列には、改行コードを含めないことをお勧めします。接頭辞がつかない行ができてしまい、
 機械的に処理することが難しくなるためです。複数行の出力を行いたい場合は、メソッドを複数回に分けて
 呼び出してください。
 
 
 ## マルチスレッド対応の明示
 
-もし作成したプラグインがスレッドセーフである場合は、それを明示することが望ましいと言えます。
+もし作成したプラグインがスレッドセーフである場合は、それを明示することが望ましいといえます。
 Maven{{book.version.maven}}時点でのマルチスレッドサポートは限定的ですが、これが改善されたときのために用意しておきましょう。
 
 `@Mojo`アノテーションの`threadSafe`プロパティによってスレッドセーフか否かを表現できます。
-[公式のチェックリスト](https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3#ParallelbuildsinMaven3-Mojothreadsafetyassertionchecklist)を確認し、スレッドセーフであると言える場合は、`true`を指定しましょう。
+[公式のチェックリスト](https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3#ParallelbuildsinMaven3-Mojothreadsafetyassertionchecklist)を確認し、スレッドセーフであるといえる場合は、`true`を指定しましょう。
 
 ```java
 @Mojo(
@@ -99,10 +99,10 @@ Maven{{book.version.maven}}時点でのマルチスレッドサポートは限�
 )
 ```
 
-2015年4月時点での公式チェックリストの訳を以下に記載します。
+2015年4月時点での公式チェックリストの訳を次に記載します。
 
 * staticなフィールドや変数を使っている場合、その値がスレッドセーフであることを確認すること。
-    * 特に "java.text.Format" のサブクラス (NumeberFormat, DateFormat など) はスレッドセーフでないので、staticなフィールドを介して複数のスレッドから利用されるようなことがないように注意する。
+    * 特に "java.text.Format" のサブクラス （NumberFormat, DateFormat など） はスレッドセーフでないので、staticなフィールドを介して複数のスレッドから利用されるようなことがないように注意する。
 * `components.xml`にシングルトンとして定義されているPlexusコンポーネントを使っている場合、そのコンポーネントはスレッドセーフでなければならない。
 * 依存ライブラリに既知の問題が存在しないか確認すること。
 * サードパーティ製ライブラリがスレッドセーフであることを確認すること。
