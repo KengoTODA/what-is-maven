@@ -3,6 +3,12 @@
   "title": "Maven3のはじめかた",
   "author": "Kengo TODA",
   "language": "ja",
+  "plugins": ["ga"],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-111696302-1"
+    }
+  },
   "variables": {
     "version": {
       "maven": "3.5.2",
