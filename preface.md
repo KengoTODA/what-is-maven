@@ -55,6 +55,14 @@ Mavenで管理されたプロジェクトにはじめて参加する開発者が
 またソースコードは<a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>によってライセンスされています。
 読者はライセンスに従い自由に本資料を複製・再配布することができます。
 
+## 本資料のバージョン
+
+{{ "この書籍はGitリポジトリのリビジョン " | gitShort }} からビルドされました。
+このバージョンが最新かどうかは、[GitHubのmasterブランチ](https://github.com/KengoTODA/what-is-maven/commits/master)の最新コミットのリビジョンが上記リビジョンと一致するかを調べることで判定できます。
+
+[Amazonで電子書籍を購入](https://www.amazon.co.jp/dp/B01LXCT0TV)された方には、Amazonからは改訂版の更新情報は通常届きません。[こちらのページ](https://kdp.amazon.co.jp/ja_JP/help/topic/G200966010)を参考に改訂版を入手してください。
+
+
 ## 著作権
 
 文章ならびにソースコードの著作権は、特別の記載がない限り[Kengo TODA](mailto:skypencil@gmail.com)が有します。

@@ -10,6 +10,7 @@
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-ga": "^1.0.0",
+    "gitbook-plugin-gitversion": "0.0.1",
     "textlint": "^7.4.0",
     "textlint-rule-max-ten": "^2.0.3",
     "textlint-rule-no-mix-dearu-desumasu": "^3.0.3",
