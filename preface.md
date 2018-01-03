@@ -41,13 +41,15 @@ Mavenで管理されたプロジェクトにはじめて参加する開発者が
 
 ## 動作確認環境
 
-`OSX 10.12.6`にて<code>Oracle JDK{{book.version.jdk}}</code>ならびに<code>Maven {{book.version.maven}}</code>を使用して動作確認を行っています。
+`OSX 10.13.2`にて<code>Oracle JDK{{book.version.jdk}}</code>ならびに<code>Maven {{book.version.maven}}</code>を使用して動作確認を行っています。
 環境に強く依存するコードは含みませんので、JDK{{book.version.jdk}}が動く環境であればWindowsであれUNIXであれ問題なく動作すると思われます。
 
 ## サポート
 
 本資料ならびに本資料が参照するソースコードは[GitHubで入手できます](https://github.com/KengoTODA/what-is-maven)。
 資料の改善提案や修正依頼などはGitHubのissueあるいはpull requestを通じてご連絡願います。
+
+[Amazonで電子書籍を購入](https://www.amazon.co.jp/dp/B01LXCT0TV)された方には、Amazonからは改訂版の更新情報は通常届きません。[こちらのページ](https://kdp.amazon.co.jp/ja_JP/help/topic/G200966010)を参考に改訂版を入手してください。
 
 ## ライセンス
 

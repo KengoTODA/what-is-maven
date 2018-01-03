@@ -4,7 +4,8 @@ jdk:
 before_install:
   - export PATH=$M2_HOME/bin:$PATH
 install:
-  - nvm install 6
+  - nvm install
+  - nvm use
   - npm install
   - ./mvnw install -DskipTests=true
 script:
