@@ -1,17 +1,15 @@
 language: java
 jdk:
   - oraclejdk8
-before_install:
-  - export PATH=$M2_HOME/bin:$PATH
 install:
   - nvm install
   - nvm use
   - npm install
-  - ./mvnw install -DskipTests=true
+  - ./mvnw install -DskipTests=true -B
 script:
   - npm run lint
   - npm test
-  - ./mvnw test
+  - ./mvnw verify -B
 sudo: false
 cache:
   directories:
