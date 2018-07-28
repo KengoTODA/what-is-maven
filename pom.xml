@@ -54,7 +54,7 @@
           oss-parent:7 がスレッドセーフでないバージョンを使用しているため、バージョンを上書き。
           参考： https://github.com/sonatype/oss-parents/pull/2
         -->
-        <version>1.4</version>
+        <version>1.4.1</version>
         <executions>
           <execution>
             <id>enforce-maven</id>
