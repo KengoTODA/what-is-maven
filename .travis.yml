@@ -7,7 +7,6 @@ install:
   - npm install
   - ./mvnw install -DskipTests=true -B
 script:
-  - npm run lint
   - npm test
   - ./mvnw verify -B
 sudo: false

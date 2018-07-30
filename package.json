@@ -4,10 +4,17 @@
     "url": "git@github.com:KengoTODA/what-is-maven.git"
   },
   "license": "Apache-2.0",
+  "homepage": "https://maven3.kengo-toda.jp/",
+  "bugs": "https://github.com/KengoTODA/what-is-maven/issues",
+  "author": {
+    "name": "Kengo TODA",
+    "url": "https://www.kengo-toda.jp/"
+  },
   "scripts": {
     "postinstall": "gitbook install",
     "test": "gitbook build",
-    "lint": "textlint '!(node_modules)/*.md'"
+    "pdf": "gitbook pdf ./ ./what-is-maven.pdf",
+    "pretest": "textlint '!(node_modules)/*.md'"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
