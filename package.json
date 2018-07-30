@@ -5,6 +5,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
+    "postinstall": "gitbook install",
     "test": "gitbook build",
     "lint": "textlint '!(node_modules)/*.md'"
   },
