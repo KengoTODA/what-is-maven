@@ -3,6 +3,7 @@
     "type": "git",
     "url": "git@github.com:KengoTODA/what-is-maven.git"
   },
+  "license": "Apache-2.0",
   "scripts": {
     "test": "gitbook build",
     "lint": "textlint '!(node_modules)/*.md'"
