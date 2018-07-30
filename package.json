@@ -13,6 +13,8 @@
   "scripts": {
     "postinstall": "gitbook install",
     "test": "gitbook build",
+    "epub": "gitbook epub ./ ./what-is-maven.epub",
+    "mobi": "gitbook mobi ./ ./what-is-maven.mobi",
     "pdf": "gitbook pdf ./ ./what-is-maven.pdf",
     "pretest": "textlint '!(node_modules)/*.md'"
   },
