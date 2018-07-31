@@ -10,6 +10,7 @@ before_install:
   - sudo ln -s /opt/calibre/ebook-convert /usr/local/bin/
   # https://ipafont.ipa.go.jp/node26
   - wget -nv -O /tmp/ipaexm00301.zip https://oscdl.ipa.go.jp/IPAexfont/ipaexm00301.zip
+  - mkdir -p ~/.fonts
   - unzip -p /tmp/ipaexm00301.zip ipaexm00301/ipaexm.ttf > ~/.fonts/ipaexm.ttf
   - fc-cache -fv
 install:
