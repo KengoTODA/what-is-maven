@@ -15,5 +15,8 @@
       "junit": "4.12",
       "jdk": "8"
     }
+  },
+  "pdf": {
+    "fontFamily": "IPAexMincho"
   }
 }
