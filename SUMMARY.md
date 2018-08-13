@@ -2,6 +2,7 @@
 
 * [概要](README.md)
 * [はじめに](preface/README.md)
+    * [電子書籍の配布形式について](preface/distributions.md)
 * [Maven入門](primer/README.md)
     * [Mavenのインストール](primer/install.md)
     * [Mavenの使い方](primer/abstract.md)
