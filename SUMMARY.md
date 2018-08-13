@@ -1,7 +1,7 @@
 # 目次
 
 * [概要](README.md)
-* [はじめに](preface.md)
+* [はじめに](preface/README.md)
 * [Maven入門](primer/README.md)
     * [Mavenのインストール](primer/install.md)
     * [Mavenの使い方](primer/abstract.md)

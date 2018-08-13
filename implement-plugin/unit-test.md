@@ -57,7 +57,7 @@ public class SampleMojoTest {
 `TestResources`は各テストメソッドで固有のリソースを使うためのJUnit Ruleです。
 `src/test/projects`次にダミーのMavenプロジェクトが入ったディレクトリを配置しておき、
 そのディレクトリ名を`getBasedir()`メソッドに渡すことで、ダミープロジェクトの設定を元に
-Mojoインスタンスを作成することができます。
+Mojoインスタンスを作成できます。
 
 つまりこのテストは、ダミープロジェクトの設定を元に作成したMojoインスタンスのメソッドを呼ぶことで
 プラグインが正常に動作することを確認するためのものです。
@@ -81,11 +81,11 @@ Mojoインスタンスを作成することができます。
   }
 ```
 
-テスト内容によっては、実行時にMojoの状態を確認するコードなどを記述する必要があるかもしれません。
+テスト内容によっては、実行時にMojoの状態を確認するコードなどを記述する必要があります。
 
 ## 期待どおりに異常終了することをテストする
 
-設定が異常なときや必要なファイルがないときは、Mavenプラグインが異常終了する必要があります。
+設定に問題があるときや必要なファイルが存在しないときは、Mavenプラグインを異常終了させる必要があります。
 
 JUnitのテストとしては、`execute()`メソッドが`MojoFailureException`あるいは`MojoExecutionException`を投げることを確認するコードを書きます。
 次のように`@Test`アノテーションに期待される例外を指定してください。
@@ -104,7 +104,7 @@ JUnitのテストとしては、`execute()`メソッドが`MojoFailureException`
 
 Wikiによると`MojoExecutionException`は[設定に問題がありMojoの実行ができなかったとき](https://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException)に、`MojoFailureException`は[依存関係やプロジェクトが持つソースコードに問題がありMojoの実行が失敗したとき](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException)に投げる必要があります。
 
-[Javadocに記載されている表現](http://maven.apache.org/ref/{{book.version.maven}}/maven-plugin-api/apidocs/org/apache/maven/plugin/Mojo.html#execute%28%29)で言い換えると、`MojoExecutionException`はプラグイン提供者が発生を期待しない問題が生じたときにビルドをエラー終了させるために、`MojoFailureException`はプラグイン提供者が期待する問題が生じたときにビルドを失敗させるために使います。
+[Javadocに記載されている表現](http://maven.apache.org/ref/{{book.version.maven}}/maven-plugin-api/apidocs/org/apache/maven/plugin/Mojo.html#execute%28%29)で言い換えると、`MojoExecutionException`はプラグイン提供者にとって予期しない問題が生じたときにビルドをエラー終了させるために使います。一方で`MojoFailureException`はプラグイン提供者の想定する問題が生じたときにビルドを失敗させるために使います。
 適宜使い分けてください。
 
 
@@ -113,7 +113,7 @@ Wikiによると`MojoExecutionException`は[設定に問題がありMojoの実�
 Mavenプラグインを使用するユーザは、ログを通じてプラグインからの結果報告や異常通知などを受けます。
 このためログが特定の条件下で期待どおりに出ることは、ぜひテストで確認・保証しておきたいポイントです。
 
-`Mojo`インタフェースはロガーをセットするメソッドを提供していますので、モックオブジェクトを利用することができます。
+`Mojo`インタフェースはロガーをセットするメソッドを提供していますので、モックオブジェクトを利用できます。
 次のコードは[Mockito](https://github.com/mockito/mockito)を利用してデバッグログの出力内容を確認するものです。
 
 ```java

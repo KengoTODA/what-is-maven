@@ -1,7 +1,11 @@
 {
   "rules": {
-    "preset-ja-technical-writing": true,
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        max: 300
+      }
+    },
     "no-start-duplicated-conjunction": true,
-    "spellcheck-tech-word": true
+    "spellcheck-tech-word": true,
   }
 }
