@@ -12,7 +12,7 @@ mvn install
 
 ## 特定のモジュールだけをビルドする
 
-`--projects`オプションを使うことで、特定のモジュールだけをビルドすることができます。
+`--projects`オプションを使うことで、特定のモジュールだけをビルドできます。
 たとえば次のコマンドはcoreモジュールだけをinstallします。
 
 ```sh
@@ -50,7 +50,7 @@ mvn install --also-make-dependents --projects core
 ## 途中のモジュールからビルドを再開（--resume-fromオプション）
 
 ビルドが失敗してそれを修正した場合、ビルドを最初からやり直す必要はありません。修正したモジュールからビルドを再開することで、
-ビルドにかかる時間を短縮することができます。ビルドを開始したいモジュールを`--resume-from`で指定してください。
+ビルドにかかる時間を短縮できます。ビルドを開始したいモジュールを`--resume-from`で指定してください。
 
 ```sh
 mvn install --also-make --projects core --resume-from test
@@ -63,6 +63,6 @@ mvn install --also-make --projects core --resume-from test
 
 Maven3では複数モジュールを同時にビルドする`--threads`オプションが提供されています。
 非対応のプラグインがあること、実験的な実装であることに注意が必要ですが、CPUがボトルネックになっている
-ビルドを高速化したい場合には検討できるかもしれません。
+ビルドを高速化したい場合には利用を検討できます。
 
 - [Parallel builds in Maven 3](https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3)

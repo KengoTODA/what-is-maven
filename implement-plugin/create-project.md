@@ -87,4 +87,4 @@ TODO 上記サイトのURLを調べる。
 
 [^1]: http://maven.apache.org/plugin-tools/maven-plugin-plugin/examples/using-annotations.html
 [^2]: ヘルプ表示用Mojoを自動生成するため
-[^3]: TODO 1.2は2015年2月時点での最新版だが、長く更新されていないので、新しいアーキタイプを作成すること
+[^3]: TODO 1.2は2015年2月時点での最新版だが、長く更新されていないので、新しいアーキタイプを作成すること。
