@@ -1,13 +1,7 @@
 {
   "rules": {
-    "prh": {
-      "rulePaths" :["./prh-rules/media/techbooster.yml"]
-    },
-    "max-ten": {
-      "max": 3
-    },
-    "spellcheck-tech-word": true,
-    "no-mix-dearu-desumasu": true,
+    "preset-ja-technical-writing": true,
+    "no-start-duplicated-conjunction": true,
     "spellcheck-tech-word": true
   }
 }
