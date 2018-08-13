@@ -8,5 +8,5 @@ GitHubにて[電子書籍（PDF, ePUB, MOBI）を無償配布しています](ht
 
 ![qr code](QR.png "https://maven3.kengo-toda.jp/")
 
-ライセンスならびに著作権については[はじめに](./preface.md)をご覧ください。
+ライセンスならびに著作権については[はじめに](./preface/README.md)をご覧ください。
 英語の資料をお探しの方は、やや古い情報が混ざりますが[Sonatype社の資料](http://www.sonatype.com/resources/books)をお薦めします。
