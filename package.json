@@ -21,7 +21,7 @@
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-ga": "^1.0.0",
-    "textlint": "^11.0.0",
+    "textlint": "^11.0.1",
     "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
     "textlint-rule-preset-ja-technical-writing": "^3.0.1",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
