@@ -20,6 +20,4 @@ pom.xmlに利用するプラグインを記載することで、Mavenが自動�
 
 ## 参考になるプラグイン
 
-次のプラグインは規模も大きくなく、簡単に読むことができます。実装の参考としてください。
-
-* [sample-maven-plugin](../sample-maven-plugin)
+この書籍のGitHubリポジトリで配布している[sample-maven-plugin](https://github.com/KengoTODA/what-is-maven/tree/master/sample-maven-plugin)は規模も大きくなく、簡単に読むことができます。実装の参考としてください。
