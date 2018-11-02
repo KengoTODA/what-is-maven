@@ -9,12 +9,11 @@ binディレクトリに実行可能ファイルが含まれていますので�
 参考までに、執筆している環境では次のような出力が得られました。
 
 <pre><code class="lang-zsh">$ mvn --version
-Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T15:58:13+08:00)
-Maven home: /Users/kengo/.m2/wrapper/dists/apache-maven-3.5.2-bin/28qa8v9e2mq69covern8vmdkj0/apache-maven-3.5.2
-Java version: 1.8.0_144, vendor: Oracle Corporation
-Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-25T02:41:47+08:00)
+Maven home: /home/kengo/.m2/wrapper/dists/apache-maven-3.6.0-bin/3rgjh30jneo7541hun7uggltkb/apache-maven-3.6.0
+Java version: 1.8.0_191, vendor: Oracle Corporation, runtime: /home/kengo/jvm/oracle-jdk-1.8.0_191/jre
 Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "10.12.6", arch: "x86_64", family: "mac"
+OS name: "linux", version: "4.15.0-38-generic", arch: "amd64", family: "unix"
 </core></pre>
 
 このように、Mavenは`mvn`コマンドによって呼び出します。`--version`はMavenやJDKのバージョンを出力するための
