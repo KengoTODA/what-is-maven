@@ -14,14 +14,14 @@ before_install:
   - unzip -p /tmp/ipaexm00301.zip ipaexm00301/ipaexm.ttf > ~/.fonts/ipaexm.ttf
   - fc-cache -fv
 install:
-  - npm install
+  - yarn install
   - ./mvnw install -DskipTests=true -B
 script:
-  - npm test
+  - yarn test
   - ./mvnw verify -B
-  - travis_wait npm run epub
-  - travis_wait npm run mobi
-  - travis_wait npm run pdf
+  - travis_wait yarn run epub
+  - travis_wait yarn run mobi
+  - travis_wait yarn run pdf
 cache:
   directories:
     - node_modules
