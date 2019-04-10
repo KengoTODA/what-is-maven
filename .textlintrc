@@ -7,5 +7,8 @@
     },
     "no-start-duplicated-conjunction": true,
     "spellcheck-tech-word": true,
+  },
+  "filters": {
+    "comments": true
   }
 }

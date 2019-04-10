@@ -6,6 +6,8 @@
 
 はじめに、`pom.xml`に以下を設定しましょう。
 
+<!-- textlint-disable spellcheck-tech-word -->
+
 * `<packaging>` 要素を `<project>` 要素の直下に追加し、値を *maven-plugin* に設定
 * *maven-plugin-api* と *maven-plugin-annotations* に *provided* スコープで依存
 * `<artifactId>` 要素を *(任意の名前)-maven-plugin* に設定
@@ -63,6 +65,8 @@
       &lt;/plugin&gt;
     &lt;/plugins&gt;
   &lt;/build&gt;</code></pre>
+
+<!-- textlint-enable spellcheck-tech-word -->
 
 なお、archetypeプラグインを利用するとpom.xmlを自動的に生成してくれます[^3]ので、
 スクラッチで実装を行う場合はぜひ利用してください。次のコマンドでMavenプロジェクトの作成を行えます。
