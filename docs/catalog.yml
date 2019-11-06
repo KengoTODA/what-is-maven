@@ -1,9 +1,16 @@
 PREDEF:
-
+  - preface.re
 CHAPS:
-  - docs.re
+  - 第一部:
+    - primer/intro.re
+    - primer/install.re
+    - primer/abstract.re
+    - primer/build-lifecycle.re
+    - primer/pom-xml.re
+    - primer/maven-repository.re
+    - primer/dependency.re
+    - primer/plugin.re
 
 APPENDIX:
 
 POSTDEF:
-
