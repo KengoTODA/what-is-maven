@@ -1399,7 +1399,7 @@ gitbook-cli@^2.3.2:
     bash-color "0.0.4"
     commander "2.11.0"
     fs-extra "3.0.1"
-    lodash "4.17.4"
+    lodash "^4.17.11"
     npm "5.1.0"
     npmi "1.0.1"
     optimist "0.6.1"
@@ -2083,11 +2083,6 @@ lodash.without@~4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.without/-/lodash.without-4.4.0.tgz#3cd4574a00b67bae373a94b748772640507b7aac"
   integrity sha1-PNRXSgC2e643OpS3SHcmQFB7eqw=
-
-lodash@4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-  integrity sha1-eCA6TRwyiuHYbcpkYONptX9AVa4=
 
 lodash@^4.0.0, lodash@^4.17.11:
   version "4.17.11"
