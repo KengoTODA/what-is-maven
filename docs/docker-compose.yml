@@ -1,0 +1,9 @@
+version: '3'
+services:
+  review:
+    volumes:
+      - .:/work
+    image: vvakame/review:4.0
+    working_dir: /work
+    ports:
+      - "18000:18000"
