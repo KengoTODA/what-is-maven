@@ -4,7 +4,8 @@ target
 .project
 _book
 .DS_Store
-node_modules
+.yarn
+.pnp.js
 
 .idea
 *.iml
