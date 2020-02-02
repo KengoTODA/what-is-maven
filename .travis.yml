@@ -4,7 +4,7 @@ jdk:
   - openjdk8
 before_install:
   - nvm install
-  - npm install -g svgexport
+  - npm install -g svgexport yarn@berry
   # https://calibre-ebook.com/download_linux
   - sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
   - sudo ln -s /opt/calibre/ebook-convert /usr/local/bin/
