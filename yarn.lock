@@ -1199,11 +1199,16 @@ __metadata:
   linkType: hard
 
 "debug@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "debug@npm:4.1.1"
+  version: 4.2.0
+  resolution: "debug@npm:4.2.0"
   dependencies:
-    ms: ^2.1.1
-  checksum: e3bfa1544ced80ac5764aa313530150af442e5ce53f91090f00e3aff33a8b535ce60a7502d1451b3cbc2b9cd6994b3a08a38fbd3ff7a2ec801ad79d8b457b8e8
+    ms: 2.1.2
+  peerDependencies:
+    supports-color: "*"
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 3c332e7d330edf2d90a6e79cc7e42c72f27f4bf048ddb4c09512fd8cb2bc858500bde979a67fe6906908b156d38f51f4f6033813f82f8640f4156e18c36876c7
   languageName: node
   linkType: hard
 
@@ -1322,17 +1327,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-serializer@npm:0":
-  version: 0.2.2
-  resolution: "dom-serializer@npm:0.2.2"
-  dependencies:
-    domelementtype: ^2.0.1
-    entities: ^2.0.0
-  checksum: 322c202e424afaede5143cff5a82d41afb857019074d7cf71ad7f4e053634f3c7bf350e039beba9664f232e42f138d0c192bf00d3573445216f79be1d7b2443a
-  languageName: node
-  linkType: hard
-
-"dom-serializer@npm:0.1.0":
+"dom-serializer@npm:0, dom-serializer@npm:0.1.0, dom-serializer@npm:~0.1.0":
   version: 0.1.0
   resolution: "dom-serializer@npm:0.1.0"
   dependencies:
@@ -1353,17 +1348,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-serializer@npm:~0.1.0":
-  version: 0.1.1
-  resolution: "dom-serializer@npm:0.1.1"
-  dependencies:
-    domelementtype: ^1.3.0
-    entities: ^1.1.1
-  checksum: ea1ae952b1ca7e0eb96824fc646bd3572b9d2bc099e1a9048c51aeb3df2071f3a4462b6e5c54153a3eaefe288ce9dd4c4792ad2b0c771645e363f27f799b42e3
+"domelementtype@npm:1, domelementtype@npm:~1.1.1":
+  version: 1.1.3
+  resolution: "domelementtype@npm:1.1.3"
+  checksum: 4be0c8f13323d31ac451716300e95f2348a5f3edfe72909ce2e64d2fede602843d8c473de73e22a2a0eb38cc3246d7c3401e549b0bd0bb924173359bdc3c2c5e
   languageName: node
   linkType: hard
 
-"domelementtype@npm:1, domelementtype@npm:^1.3.0, domelementtype@npm:^1.3.1":
+"domelementtype@npm:^1.3.1":
   version: 1.3.1
   resolution: "domelementtype@npm:1.3.1"
   checksum: 629916b0e687f19e347e82d02d9b027e7e913af18933604af7267fae769111177706cd429aa7afb6f6e9e205a7ede61b1decccdf88e042234136141cd79f8fcd
@@ -1377,28 +1369,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domelementtype@npm:~1.1.1":
-  version: 1.1.3
-  resolution: "domelementtype@npm:1.1.3"
-  checksum: 4be0c8f13323d31ac451716300e95f2348a5f3edfe72909ce2e64d2fede602843d8c473de73e22a2a0eb38cc3246d7c3401e549b0bd0bb924173359bdc3c2c5e
-  languageName: node
-  linkType: hard
-
-"domhandler@npm:2.3":
+"domhandler@npm:2.3, domhandler@npm:^2.3.0":
   version: 2.3.0
   resolution: "domhandler@npm:2.3.0"
   dependencies:
     domelementtype: 1
   checksum: 3a6202cd226443818124d0402adbb5c332568f41810003aa1e4f9d7470aaa518ce961a1b3bf63ef0be6eb8f5a04763219b9f02d7e010e485f4cbce8117c3d0f1
-  languageName: node
-  linkType: hard
-
-"domhandler@npm:^2.3.0":
-  version: 2.4.2
-  resolution: "domhandler@npm:2.4.2"
-  dependencies:
-    domelementtype: 1
-  checksum: 549146a8e1985a829685ba889a1aa6b066da9e7e70789083712edf46ed9c6732992676467d954e80921eee667ee82e922422896669f44a1c5d711edf780644bb
   languageName: node
   linkType: hard
 
@@ -1411,23 +1387,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:1.5, domutils@npm:1.5.1":
+"domutils@npm:1.5, domutils@npm:1.5.1, domutils@npm:^1.5.1":
   version: 1.5.1
   resolution: "domutils@npm:1.5.1"
   dependencies:
     dom-serializer: 0
     domelementtype: 1
   checksum: e20cf7ab988002fc4ecf5a5dee0737cf24f289f9dd36b4a4bf70a1793cd9db473b8d2d3e4e54d04f8e4b150753b4c5a51d62dfce498301e7fa93407b156ce61e
-  languageName: node
-  linkType: hard
-
-"domutils@npm:^1.5.1":
-  version: 1.7.0
-  resolution: "domutils@npm:1.7.0"
-  dependencies:
-    dom-serializer: 0
-    domelementtype: 1
-  checksum: f8d7ab4be9f555e8307080fae4de69a1bf31fa71988320f9e6667a51e5af161052f1a01c41418b2ecaddf24d5bd7ad86151b1f2be4dca4de843cd05a29c3cb5a
   languageName: node
   linkType: hard
 
@@ -1531,22 +1497,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"error@npm:7.0.2":
+"error@npm:7.0.2, error@npm:^7.0.0":
   version: 7.0.2
   resolution: "error@npm:7.0.2"
   dependencies:
     string-template: ~0.2.1
     xtend: ~4.0.0
   checksum: e19139a99fd2f4af5f5e388f759380a6de23a602fc58472a0d63cccbac599d9d41e0ff7673442d694c68cc57e2128e30bb1501de681f217e96577227e9a8940d
-  languageName: node
-  linkType: hard
-
-"error@npm:^7.0.0":
-  version: 7.2.1
-  resolution: "error@npm:7.2.1"
-  dependencies:
-    string-template: ~0.2.1
-  checksum: 851a31840925687c91322778e9d0788dd9f5f8cba1e89d336851e3079156cdb03a5ef305bf5ffe9c55f614b3e5aff616368f8be6b858b76b0389303b3851dd6d
   languageName: node
   linkType: hard
 
@@ -1677,17 +1634,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"extsprintf@npm:1.3.0":
+"extsprintf@npm:1.3.0, extsprintf@npm:^1.2.0":
   version: 1.3.0
   resolution: "extsprintf@npm:1.3.0"
   checksum: 8cf20d3044b6333076eacb7b134fa56586273e9d47ad4fa3e396ce0b6f79d575c32212c579db2de1c1991c02b58f71ad269cfdffdbd193fa040b0bfff233955f
-  languageName: node
-  linkType: hard
-
-"extsprintf@npm:^1.2.0":
-  version: 1.4.0
-  resolution: "extsprintf@npm:1.4.0"
-  checksum: 5ce016ed485f47f742ac65cc26a49fd2a05515beec3f860baaf1e201cf26c1f15e3a97847c19ce82a926d820ec21a3356c7190b64fb74c42ac7dabc879a47a3e
   languageName: node
   linkType: hard
 
@@ -3243,7 +3193,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"ms@npm:^2.1.1":
+"ms@npm:2.1.2, ms@npm:^2.1.1":
   version: 2.1.2
   resolution: "ms@npm:2.1.2"
   checksum: 2a3d955e5199024d4b18630ff47c21b52703a5e892615ae233486b8108f26b5493736009754263eebae765ab79d6e20327dad6e52d7843b689d404245e286549
@@ -3911,14 +3861,14 @@ fsevents@~2.1.2:
   linkType: hard
 
 "readable-stream@npm:1.1":
-  version: 1.1.13
-  resolution: "readable-stream@npm:1.1.13"
+  version: 1.1.14
+  resolution: "readable-stream@npm:1.1.14"
   dependencies:
     core-util-is: ~1.0.0
     inherits: ~2.0.1
     isarray: 0.0.1
     string_decoder: ~0.10.x
-  checksum: b85752d1c9dcfac5cdbf0f74f21ef66aa0831a6117d5fa1fae372f51c4d17ffea8623dd73f6dfc1b803f3c3ab1be5108c6f84661fb9a52a9284c2b1e94f90555
+  checksum: 97177834ad64fc34c135846e0fef44361d068f50a3d672f3d74be717b98bef8ee7df0338b48b8c0396690a3fb5c157d4a4a38e7c5a336bccb44e25989a0807aa
   languageName: node
   linkType: hard
 
@@ -4208,21 +4158,21 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"semver@npm:2 || 3 || 4 || 5, semver@npm:^5.5.0":
-  version: 5.7.1
-  resolution: "semver@npm:5.7.1"
-  bin:
-    semver: ./bin/semver
-  checksum: dce4680e58a60e12fd7ec1f274635267206e466eaca54e3238f7c49baf33ba07aae8fe8f002a0cf6ec3e8c6f1ccbf158e8f59acc89c1777063e93eb239fe8b76
-  languageName: node
-  linkType: hard
-
-"semver@npm:5.1.0":
+"semver@npm:2 || 3 || 4 || 5, semver@npm:5.1.0":
   version: 5.1.0
   resolution: "semver@npm:5.1.0"
   bin:
     semver: ./bin/semver
   checksum: c95a6b8e88f2bb8dd8a2d09978d6a1600d8ad26832309644a75f5260e8d023c09b9ab1559398619dd590120911706214cf46f712d74a2793545f141e2fec6b20
+  languageName: node
+  linkType: hard
+
+"semver@npm:^5.5.0":
+  version: 5.7.1
+  resolution: "semver@npm:5.7.1"
+  bin:
+    semver: ./bin/semver
+  checksum: dce4680e58a60e12fd7ec1f274635267206e466eaca54e3238f7c49baf33ba07aae8fe8f002a0cf6ec3e8c6f1ccbf158e8f59acc89c1777063e93eb239fe8b76
   languageName: node
   linkType: hard
 
@@ -5507,17 +5457,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"which@latest, which@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "which@npm:2.0.2"
-  dependencies:
-    isexe: ^2.0.0
-  bin:
-    node-which: ./bin/node-which
-  checksum: de4ba341f6f2e70ac599323e299969e5a0bda825837e830a7dff14847fa3d67cb72daebae00e68e82ee7837d753635ee504eb615cd3b75e5e9578106bc02ac2f
-  languageName: node
-  linkType: hard
-
 "which@npm:^1.2.9":
   version: 1.3.1
   resolution: "which@npm:1.3.1"
@@ -5526,6 +5465,17 @@ fsevents@~2.1.2:
   bin:
     which: ./bin/which
   checksum: 8c639095289e694cbce93f17662e56f740ceafb8d73cdccf0d2b2968df0e8b9c8ddf16f44711d1d5a5efe4d2091cb3ca06d1afa2db359df48588a71a4b60d0c6
+  languageName: node
+  linkType: hard
+
+"which@npm:^2.0.2, which@npm:latest":
+  version: 2.0.2
+  resolution: "which@npm:2.0.2"
+  dependencies:
+    isexe: ^2.0.0
+  bin:
+    node-which: ./bin/node-which
+  checksum: de4ba341f6f2e70ac599323e299969e5a0bda825837e830a7dff14847fa3d67cb72daebae00e68e82ee7837d753635ee504eb615cd3b75e5e9578106bc02ac2f
   languageName: node
   linkType: hard
 
