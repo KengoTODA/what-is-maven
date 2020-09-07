@@ -4,7 +4,7 @@ jdk:
   - openjdk8
 before_install:
   - nvm install
-  - npm install -g svgexport yarn@berry
+  - npm install -g svgexport
   # https://calibre-ebook.com/download_linux
   - sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
   - sudo ln -s /opt/calibre/ebook-convert /usr/local/bin/
@@ -14,14 +14,14 @@ before_install:
   - unzip -p /tmp/ipaexm00301.zip ipaexm00301/ipaexm.ttf > ~/.fonts/ipaexm.ttf
   - fc-cache -fv
 install:
-  - yarn install
+  - npm install
   - ./mvnw install -DskipTests=true -B
 script:
-  - yarn test
+  - npm test
   - ./mvnw verify -B
-  - travis_wait yarn run epub
-  - travis_wait yarn run mobi
-  - travis_wait yarn run pdf
+  - travis_wait npm run epub
+  - travis_wait npm run mobi
+  - travis_wait npm run pdf
 cache:
   directories:
     - node_modules
