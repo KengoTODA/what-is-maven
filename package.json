@@ -27,7 +27,6 @@
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "engines": {
-    "node": "^12.14",
-    "yarn": "^6.14"
+    "node": "^12.14"
   }
 }
