@@ -4,10 +4,8 @@ target
 .project
 _book
 .DS_Store
-.yarn
-.pnp.js
 
 .idea
 *.iml
 
-yarn-error.log
+node_modules
