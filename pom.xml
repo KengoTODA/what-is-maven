@@ -20,7 +20,7 @@
   </scm>
   <properties>
     <version.maven>3.6.0</version.maven>
-    <version.junit>4.13</version.junit>
+    <version.junit>4.13.1</version.junit>
   </properties>
   <developers>
     <developer>
