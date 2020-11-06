@@ -1,0 +1,42 @@
+name: Build
+
+on:
+  push:
+    branches: main
+    tags: 'v*'
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/setup-java
+        with:
+          java-version: 8
+      - uses: actions/setup-node
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y fonts-ipaexfont calibre
+          npm install -g svgexport
+          npm ci
+          ./mvnw install -DskipTests -B
+      - name: Test and build ebook files
+        run: |
+          npm test
+          ./mvnw verify -B
+          npm run epub
+          npm run mobi
+          npm run pdf
+      - name: Release ebook files
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            what-is-maven.epub
+            what-is-maven.mobi
+            what-is-maven.pdf
