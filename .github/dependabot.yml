@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "21:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: gitbook-plugin-ga
+    versions:
+    - "< 3, >= 2.a"
+  - dependency-name: honkit
+    versions:
+    - 3.6.19
+  - dependency-name: textlint
+    versions:
+    - 11.8.1
+    - 11.8.3
+  - dependency-name: textlint-rule-preset-ja-technical-writing
+    versions:
+    - 4.0.1
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "21:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.8.0
