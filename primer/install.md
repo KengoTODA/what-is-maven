@@ -10,7 +10,7 @@ binディレクトリに実行可能ファイルが含まれていますので�
 
 <pre><code class="lang-zsh">$ mvn --version
 Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
-Maven home: /Users/kengo/.m2/wrapper/dists/apache-maven-3.8.1-bin/2l5mhf2pq2clrde7f7qp1rdt5m/apache-maven-3.8.1
+Maven home: /home/kengo/.m2/wrapper/dists/apache-maven-3.8.1-bin/2l5mhf2pq2clrde7f7qp1rdt5m/apache-maven-3.8.1
 Java version: 1.8.0_191, vendor: Oracle Corporation, runtime: /home/kengo/jvm/oracle-jdk-1.8.0_191/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "4.15.0-38-generic", arch: "amd64", family: "unix"
