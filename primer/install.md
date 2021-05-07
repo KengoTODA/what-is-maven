@@ -9,8 +9,8 @@ binディレクトリに実行可能ファイルが含まれていますので�
 参考までに、執筆している環境では次のような出力が得られました。
 
 <pre><code class="lang-zsh">$ mvn --version
-Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-25T02:41:47+08:00)
-Maven home: /home/kengo/.m2/wrapper/dists/apache-maven-3.6.0-bin/3rgjh30jneo7541hun7uggltkb/apache-maven-3.6.0
+Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
+Maven home: /Users/kengo/.m2/wrapper/dists/apache-maven-3.8.1-bin/2l5mhf2pq2clrde7f7qp1rdt5m/apache-maven-3.8.1
 Java version: 1.8.0_191, vendor: Oracle Corporation, runtime: /home/kengo/jvm/oracle-jdk-1.8.0_191/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "4.15.0-38-generic", arch: "amd64", family: "unix"
