@@ -16,7 +16,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-plugin</artifactId>
-        <version>${version.maven}</version>
+        <version>${version.mavenplugin}</version>
         <executions>
           <execution>
             <!--
