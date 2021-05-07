@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
   <groupId>jp.skypencil</groupId>
   <artifactId>what-is-maven</artifactId>
   <name>A document to tell what is Maven and how to use Maven to Japanese developer</name>
@@ -19,7 +14,8 @@
     <url>git@github.com:KengoTODA/what-is-maven.git</url>
   </scm>
   <properties>
-    <version.maven>3.6.0</version.maven>
+    <version.maven>3.8.1</version.maven>
+    <version.mavenplugin>3.6.1</version.mavenplugin>
     <version.junit>4.13</version.junit>
   </properties>
   <developers>
@@ -75,5 +71,16 @@
         </executions>
       </plugin>
     </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 </project>
