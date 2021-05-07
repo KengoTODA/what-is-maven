@@ -15,9 +15,13 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 8
-      - uses: actions/setup-node@v1
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - name: Install dependencies
         run: |
           sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
