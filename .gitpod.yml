@@ -1,0 +1,10 @@
+image: azul/zulu-openjdk:16
+
+tasks:
+  - init: ./mvnw dependency:go-offline
+
+vscode:
+  extensions:
+    - redhat.java
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-debug
