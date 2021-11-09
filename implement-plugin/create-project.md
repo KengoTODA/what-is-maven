@@ -69,7 +69,7 @@
 <!-- textlint-enable spellcheck-tech-word -->
 
 なお、archetypeプラグインを利用するとpom.xmlを自動的に生成してくれます[^3]ので、
-スクラッチで実装を行う場合はぜひ利用してください。次のコマンドでMavenプロジェクトの作成を行えます。
+スクラッチで実装する場合はぜひ利用してください。次のコマンドでMavenプロジェクトの作成を行えます。
 
 ```sh
 mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-plugin -DarchetypeVersion=1.2
@@ -77,7 +77,7 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -Darchetyp
 
 ## Eclipseプロジェクトを作成する
 
-Eclipseで開発を行う場合、次のコマンドでEclipseプロジェクトの作成を行ってください。
+Eclipseで開発する場合、次のコマンドでEclipseプロジェクトの作成を行ってください。
 作成後、メニューバーの「ファイル→インポート」から既存のEclipseプロジェクトとして取り込むことができます。
 
 ```sh

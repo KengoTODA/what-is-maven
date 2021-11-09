@@ -1,10 +1,10 @@
 # Mojoを作成する
 
 Mavenプラグインの実体は、Mojo（Maven plain Old Java Object）と呼ばれるクラスです。Mavenプラグインは含まれるゴールの数だけMojoを保有します。
-このクラスに必要なメソッドとMojoアノテーションを追加することでプラグインの実装を行います。
+このクラスに必要なメソッドとMojoアノテーションを追加することでプラグインを実装します。
 
 Mojoは`AbstractMojo`を継承し、`@Mojo`アノテーションで修飾される必要があります。
-また`@Execute`アノテーションや`@Parameter`アノテーション、`@Component`アノテーションなど[org.apache.maven.plugins.annotationsパッケージ](http://maven.apache.org/plugin-tools/apidocs/org/apache/maven/plugins/annotations/package-summary.html)に用意されたアノテーションを使用することもできます。
+また`@Execute`アノテーションや`@Parameter`アノテーション、`@Component`アノテーションなど[org.apache.maven.plugins.annotationsパッケージ](http://maven.apache.org/plugin-tools/apidocs/org/apache/maven/plugins/annotations/package-summary.html)に用意されたアノテーションを使用できます。
 
 次にシンプルなMojoの実装を記載します。
 
@@ -71,7 +71,7 @@ getLog().debug("This is debug level, Maven will print this if user uses -X optio
 getLog().error("This is error level, Maven will print this even if user uses -q option.");
 ```
 
-処理を高速化するため、デバッグ時にのみ情報を取得・計算することもできます。
+処理を高速化するため、デバッグ時にのみ情報を取得・計算できます。
 
 ```java
 if (getLog().isDebugEnabled()) {
@@ -80,7 +80,7 @@ if (getLog().isDebugEnabled()) {
 ```
 
 なお引数に渡す文字列には、改行コードを含めないことをお勧めします。接頭辞のつかない行ができてしまい、
-機械的に処理することが難しくなるためです。複数行の出力を行いたい場合は、メソッドを複数回に分けて
+機械的に処理することが難しくなるためです。複数行を出力したい場合は、メソッドを複数回に分けて
 呼び出してください。
 
 
