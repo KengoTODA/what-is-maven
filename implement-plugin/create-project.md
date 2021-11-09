@@ -77,7 +77,7 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -Darchetyp
 
 ## Eclipseプロジェクトを作成する
 
-Eclipseで開発する場合、次のコマンドでEclipseプロジェクトの作成を行ってください。
+Eclipseで開発する場合、次のコマンドでEclipseプロジェクトの作成してください。
 作成後、メニューバーの「ファイル→インポート」から既存のEclipseプロジェクトとして取り込むことができます。
 
 ```sh
