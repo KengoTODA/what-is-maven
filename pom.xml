@@ -15,7 +15,7 @@
   </scm>
   <properties>
     <version.maven>3.8.5</version.maven>
-    <version.mavenplugin>3.6.4</version.mavenplugin>
+    <version.mavenplugin>3.7.0</version.mavenplugin>
     <version.junit>4.13.2</version.junit>
   </properties>
   <developers>
