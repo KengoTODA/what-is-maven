@@ -9,21 +9,23 @@ Mavenプラグインのユニットテストを作成するために、`maven-pl
 まずJUnitと`maven-plugin-testing-harness`を使用するために、以下2つの`<dependency>`を
 `pom.xml`に追加します。
 
-<pre><code class="lang-xml">&lt;dependencies&gt;
+```xml
+<dependencies>
   ...
-  &lt;dependency&gt;
-    &lt;groupId&gt;junit&lt;/groupId&gt;
-    &lt;artifactId&gt;junit&lt;/artifactId&gt;
-    &lt;version&gt;{{book.version.junit}}&lt;/version&gt;
-    &lt;scope&gt;test&lt;/scope&gt;
-  &lt;/dependency&gt;
-  &lt;dependency&gt;
-    &lt;groupId&gt;org.apache.maven.plugin-testing&lt;/groupId&gt;
-    &lt;artifactId&gt;maven-plugin-testing-harness&lt;/artifactId&gt;
-    &lt;version&gt;3.3.0&lt;/version&gt;
-    &lt;scope&gt;test&lt;/scope&gt;
-  &lt;/dependency&gt;
-&lt;/dependencies&gt;</code></pre>
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>{{book.version.junit}}</version>
+    <scope>test</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.maven.plugin-testing</groupId>
+    <artifactId>maven-plugin-testing-harness</artifactId>
+    <version>3.3.0</version>
+    <scope>test</scope>
+  </dependency>
+</dependencies>
+```
 
 ## ユニットテストを作成する
 
