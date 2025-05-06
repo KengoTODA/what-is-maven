@@ -46,3 +46,10 @@ jobs:
             what-is-maven.epub
             what-is-maven.mobi
             what-is-maven.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ebooks
+          path: |
+            what-is-maven.epub
+            what-is-maven.mobi
+            what-is-maven.pdf
