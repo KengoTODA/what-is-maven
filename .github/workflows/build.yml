@@ -22,7 +22,7 @@ jobs:
           node-version-file: .nvmrc
       - name: Install dependencies
         run: |
-          sudo apt-get update && sudo apt-get install libgl
+          sudo apt-get update && sudo apt-get install -y libegl1
           sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
           sudo ln -s /opt/calibre/ebook-convert /usr/local/bin/
           sudo apt-get install -y fonts-ipaexfont
