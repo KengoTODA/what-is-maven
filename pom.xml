@@ -14,7 +14,7 @@
     <url>git@github.com:KengoTODA/what-is-maven.git</url>
   </scm>
   <properties>
-    <version.maven>3.8.5</version.maven>
+    <version.maven>3.9.9</version.maven>
     <version.mavenplugin>3.6.4</version.mavenplugin>
     <version.junit>4.13.2</version.junit>
   </properties>
@@ -22,7 +22,7 @@
     <developer>
       <id>KengoTODA</id>
       <name>Kengo TODA</name>
-      <url>http://kengotoda.github.io/</url>
+      <url>https://www.kengo-toda.jp/</url>
     </developer>
   </developers>
   <licenses>
