@@ -3,11 +3,11 @@
     "preset-ja-technical-writing": {
       "sentence-length": {
         "max": 300
-      }
+      },
+      "no-mix-dearu-desumasu": false
     },
     "no-start-duplicated-conjunction": true,
-    "spellcheck-tech-word": true,
-    "no-mix-dearu-desumasu": false
+    "spellcheck-tech-word": true
   },
   "filters": {
     "comments": true
