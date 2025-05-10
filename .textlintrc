@@ -7,6 +7,7 @@
     },
     "no-start-duplicated-conjunction": true,
     "spellcheck-tech-word": true,
+    "no-mix-dearu-desumasu": false,
   },
   "filters": {
     "comments": true
