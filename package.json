@@ -20,7 +20,7 @@
   "devDependencies": {
     "gitbook-plugin-ga": "^1.0.0",
     "honkit": "^6.0.3",
-    "textlint": "^14.7.1",
+    "textlint": "^14.7.2",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2",
