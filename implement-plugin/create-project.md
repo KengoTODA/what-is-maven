@@ -19,54 +19,55 @@
 
 `pom.xml`の概要は次のようになります。
 
-<!-- disable:prh --><pre><code class="lang-xml">&lt;project&gt;
-  &lt;artifactId&gt;sample-maven-plugin&lt;/artifactId&gt;
-  &lt;packaging&gt;maven-plugin&lt;/packaging&gt;
+```xml
+<project>
+  <artifactId>sample-maven-plugin</artifactId>
+  <packaging>maven-plugin</packaging>
 
-  <!-- disable:prh -->&lt;dependencies&gt;
-    &lt;dependency&gt;
-      &lt;groupId&gt;org.apache.maven&lt;/groupId&gt;
-      &lt;artifactId&gt;maven-plugin-api&lt;/artifactId&gt;
-      &lt;version&gt;{{book.version.maven}}&lt;/version&gt;&lt;!-- version of Maven --&gt;
-      &lt;scope&gt;provided&lt;/scope&gt;
-    &lt;/dependency&gt;
-    &lt;dependency&gt;
-      &lt;groupId&gt;org.apache.maven.plugin-tools&lt;/groupId&gt;
-      &lt;artifactId&gt;maven-plugin-annotations&lt;/artifactId&gt;
-      &lt;version&gt;3.4&lt;/version&gt;&lt;!-- version of Maven Plugin Tools --&gt;
-      &lt;scope&gt;provided&lt;/scope&gt;
-    &lt;/dependency&gt;
-    &lt;dependency&gt;
-      &lt;groupId&gt;junit&lt;/groupId&gt;
-      &lt;artifactId&gt;junit&lt;/artifactId&gt;
-      &lt;version&gt;{{book.version.junit}}&lt;/version&gt;
-      &lt;scope&gt;test&lt;/scope&gt;
-    &lt;/dependency&gt;
-  &lt;/dependencies&gt;
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>{{book.version.maven}}</version><!-- version of Maven -->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugin-tools</groupId>
+      <artifactId>maven-plugin-annotations</artifactId>
+      <version>3.4</version><!-- version of Maven Plugin Tools -->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>{{book.version.junit}}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
-  <!-- disable:prh -->&lt;build&gt;
-    &lt;plugins&gt;
-      &lt;plugin&gt;
-        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-        &lt;artifactId&gt;maven-plugin-plugin&lt;/artifactId&gt;
-        &lt;version&gt;3.4&lt;/version&gt;
-        &lt;executions&gt;
-          &lt;execution&gt;
-            &lt;id&gt;default-descriptor&lt;/id&gt;
-            &lt;phase&gt;process-classes&lt;/phase&gt;
-          &lt;/execution&gt;
-          &lt;execution&gt;
-            &lt;id&gt;generate-helpmojo&lt;/id&gt;
-            &lt;goals&gt;
-              &lt;goal&gt;helpmojo&lt;/goal&gt;
-            &lt;/goals&gt;
-          &lt;/execution&gt;
-        &lt;/executions&gt;
-      &lt;/plugin&gt;
-    &lt;/plugins&gt;
-  &lt;/build&gt;</code></pre>
-
-<!-- textlint-enable spellcheck-tech-word -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>3.4</version>
+        <executions>
+          <execution>
+            <id>default-descriptor</id>
+            <phase>process-classes</phase>
+          </execution>
+          <execution>
+            <id>generate-helpmojo</id>
+            <goals>
+              <goal>helpmojo</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
 
 なお、archetypeプラグインを利用するとpom.xmlを自動的に生成してくれます[^3]ので、
 スクラッチで実装する場合はぜひ利用してください。次のコマンドでMavenプロジェクトの作成を行えます。
